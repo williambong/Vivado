@@ -1,0 +1,337 @@
+
+
+================================================================
+== Vivado HLS Report for 'duc_imf2'
+================================================================
+* Date:           Mon Aug 10 08:45:14 2015
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        duc_prj
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   2.71|      2.39|        0.34|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    6|    6|    6|    6|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|Expression       |        -|      -|       -|       -|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       -|
+|Register         |        -|      -|       -|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+|Available        |      650|    600|  202800|  101400|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 7
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+* FSM state operations: 
+
+ <State 1>: 2.39ns
+ST_1: x_read [1/1] 0.00ns
+:0  %x_read = call i18 @_ssdm_op_Read.ap_auto.i18(i18 %x)
+
+ST_1: i_2_load [1/1] 0.00ns
+:1  %i_2_load = load i4* @i_2, align 1
+
+ST_1: tmp [1/1] 1.24ns
+:2  %tmp = icmp eq i4 %i_2_load, 0
+
+ST_1: stg_11 [1/1] 0.00ns
+:3  br i1 %tmp, label %1, label %._crit_edge_ifconv
+
+ST_1: stg_12 [1/1] 0.00ns
+:0  store i18 %x_read, i18* @in_2, align 4
+
+ST_1: stg_13 [1/1] 0.00ns
+:1  br label %._crit_edge_ifconv
+
+ST_1: inc [1/1] 0.48ns
+._crit_edge_ifconv:0  %inc = add i4 %i_2_load, 1
+
+ST_1: tmp_s [1/1] 0.00ns
+._crit_edge_ifconv:1  %tmp_s = zext i4 %i_2_load to i64
+
+ST_1: c_2_addr [1/1] 0.00ns
+._crit_edge_ifconv:2  %c_2_addr = getelementptr inbounds [12 x i18]* @c_2, i64 0, i64 %tmp_s
+
+ST_1: c_2_load [2/2] 2.39ns
+._crit_edge_ifconv:3  %c_2_load = load i18* %c_2_addr, align 4
+
+
+ <State 2>: 2.39ns
+ST_2: c_2_load [1/2] 2.39ns
+._crit_edge_ifconv:3  %c_2_load = load i18* %c_2_addr, align 4
+
+ST_2: ch_2_load [1/1] 0.00ns
+._crit_edge_ifconv:6  %ch_2_load = load i1* @ch_2, align 1
+
+ST_2: tmp_1 [1/1] 0.00ns
+._crit_edge_ifconv:7  %tmp_1 = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %inc, i1 %ch_2_load)
+
+ST_2: tmp_3 [1/1] 0.00ns
+._crit_edge_ifconv:8  %tmp_3 = zext i5 %tmp_1 to i64
+
+ST_2: shift_reg_p_2_addr [1/1] 0.00ns
+._crit_edge_ifconv:9  %shift_reg_p_2_addr = getelementptr [26 x i38]* @shift_reg_p_2, i64 0, i64 %tmp_3
+
+ST_2: shift_reg_p_2_load [2/2] 2.39ns
+._crit_edge_ifconv:10  %shift_reg_p_2_load = load i38* %shift_reg_p_2_addr, align 8
+
+ST_2: sel_tmp1 [1/1] 1.24ns
+._crit_edge_ifconv:11  %sel_tmp1 = icmp eq i4 %i_2_load, -5
+
+ST_2: sel_tmp2 [1/1] 1.24ns
+._crit_edge_ifconv:12  %sel_tmp2 = icmp eq i4 %i_2_load, 5
+
+
+ <State 3>: 2.39ns
+ST_3: in_2_load [1/1] 0.00ns
+._crit_edge_ifconv:4  %in_2_load = load i18* @in_2, align 4
+
+ST_3: init_2_load [1/1] 0.00ns
+._crit_edge_ifconv:5  %init_2_load = load i1* @init_2, align 1
+
+ST_3: shift_reg_p_2_load [1/2] 2.39ns
+._crit_edge_ifconv:10  %shift_reg_p_2_load = load i38* %shift_reg_p_2_addr, align 8
+
+ST_3: sel_tmp3 [1/1] 0.84ns
+._crit_edge_ifconv:13  %sel_tmp3 = xor i1 %init_2_load, true
+
+ST_3: sel_tmp4 [1/1] 0.84ns
+._crit_edge_ifconv:14  %sel_tmp4 = or i1 %sel_tmp1, %sel_tmp2
+
+ST_3: sel_tmp5 [1/1] 0.84ns
+._crit_edge_ifconv:15  %sel_tmp5 = and i1 %sel_tmp4, %sel_tmp3
+
+ST_3: tmp_i [1/1] 0.00ns
+._crit_edge_ifconv:18  %tmp_i = sext i18 %c_2_load to i36
+
+ST_3: tmp_i_13 [1/1] 0.00ns
+._crit_edge_ifconv:19  %tmp_i_13 = sext i18 %in_2_load to i36
+
+ST_3: m [3/3] 1.09ns
+._crit_edge_ifconv:20  %m = mul nsw i36 %tmp_i, %tmp_i_13
+
+
+ <State 4>: 1.68ns
+ST_4: tmp_2 [1/1] 0.84ns
+._crit_edge_ifconv:16  %tmp_2 = or i1 %sel_tmp5, %init_2_load
+
+ST_4: s_assign [1/1] 0.84ns
+._crit_edge_ifconv:17  %s_assign = select i1 %tmp_2, i38 0, i38 %shift_reg_p_2_load
+
+ST_4: m [2/3] 1.09ns
+._crit_edge_ifconv:20  %m = mul nsw i36 %tmp_i, %tmp_i_13
+
+
+ <State 5>: 1.78ns
+ST_5: m [1/3] 0.00ns
+._crit_edge_ifconv:20  %m = mul nsw i36 %tmp_i, %tmp_i_13
+
+ST_5: tmp_58_i [1/1] 0.00ns
+._crit_edge_ifconv:21  %tmp_58_i = sext i36 %m to i38
+
+ST_5: sum [2/2] 1.78ns
+._crit_edge_ifconv:22  %sum = add nsw i38 %tmp_58_i, %s_assign
+
+
+ <State 6>: 1.78ns
+ST_6: sum [1/2] 1.78ns
+._crit_edge_ifconv:22  %sum = add nsw i38 %tmp_58_i, %s_assign
+
+
+ <State 7>: 2.39ns
+ST_7: tmp_4 [1/1] 0.00ns
+._crit_edge_ifconv:23  %tmp_4 = call i5 @_ssdm_op_BitConcatenate.i5.i4.i1(i4 %i_2_load, i1 %ch_2_load)
+
+ST_7: tmp_8 [1/1] 0.00ns
+._crit_edge_ifconv:24  %tmp_8 = zext i5 %tmp_4 to i64
+
+ST_7: shift_reg_p_2_addr_1 [1/1] 0.00ns
+._crit_edge_ifconv:25  %shift_reg_p_2_addr_1 = getelementptr [26 x i38]* @shift_reg_p_2, i64 0, i64 %tmp_8
+
+ST_7: stg_45 [1/1] 2.39ns
+._crit_edge_ifconv:26  store i38 %sum, i38* %shift_reg_p_2_addr_1, align 8
+
+ST_7: stg_46 [1/1] 0.00ns
+._crit_edge_ifconv:27  br i1 %sel_tmp1, label %2, label %._crit_edge8_ifconv
+
+ST_7: cnt_1_load [1/1] 0.00ns
+:0  %cnt_1_load = load i2* @cnt_1, align 1
+
+ST_7: tmp_5 [1/1] 0.85ns
+:1  %tmp_5 = icmp eq i2 %cnt_1_load, -1
+
+ST_7: stg_49 [1/1] 0.00ns
+:2  br i1 %tmp_5, label %3, label %._crit_edge9
+
+ST_7: stg_50 [1/1] 0.00ns
+:0  br i1 %ch_2_load, label %4, label %._crit_edge10
+
+ST_7: stg_51 [1/1] 0.00ns
+:0  store i1 false, i1* @init_2, align 1
+
+ST_7: stg_52 [1/1] 0.00ns
+:1  br label %._crit_edge10
+
+ST_7: tmp_6 [1/1] 0.84ns
+._crit_edge10:0  %tmp_6 = xor i1 %ch_2_load, true
+
+ST_7: stg_54 [1/1] 0.00ns
+._crit_edge10:1  store i1 %tmp_6, i1* @ch_2, align 1
+
+ST_7: stg_55 [1/1] 0.00ns
+._crit_edge10:2  br label %._crit_edge9
+
+ST_7: tmp_7 [1/1] 0.48ns
+._crit_edge9:0  %tmp_7 = add i2 %cnt_1_load, 1
+
+ST_7: stg_57 [1/1] 0.00ns
+._crit_edge9:1  store i2 %tmp_7, i2* @cnt_1, align 1
+
+ST_7: stg_58 [1/1] 0.00ns
+._crit_edge9:2  br label %._crit_edge8_ifconv
+
+ST_7: y_write_assign [1/1] 0.00ns
+._crit_edge8_ifconv:0  %y_write_assign = call i18 @_ssdm_op_PartSelect.i18.i38.i32.i32(i38 %sum, i32 17, i32 34)
+
+ST_7: inc_3 [1/1] 0.84ns
+._crit_edge8_ifconv:1  %inc_3 = select i1 %sel_tmp1, i4 0, i4 %inc
+
+ST_7: stg_61 [1/1] 0.00ns
+._crit_edge8_ifconv:2  store i4 %inc_3, i4* @i_2, align 1
+
+ST_7: stg_62 [1/1] 0.00ns
+._crit_edge8_ifconv:3  ret i18 %y_write_assign
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

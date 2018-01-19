@@ -1,0 +1,235 @@
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "C:/opt/winprog/Xilinx/Vivado_HLS/2015.2/msys/bin/g++.exe"
+   Compiling apatb_duc.cpp
+   Compiling (apcc) dds.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 09:12:19 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling (apcc) duc.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 09:12:23 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling (apcc) duc_test.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 09:12:28 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling (apcc) imf1.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 09:12:33 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling (apcc) imf2.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 09:12:38 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling (apcc) imf3.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 09:12:43 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling (apcc) mac.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 09:12:48 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling (apcc) mixer.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 09:12:53 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling (apcc) srrc.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 09:12:59 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-323] Starting verilog simulation. 
+@I [SIM-15] Starting XSIM ...
+@I [SIM-316] Starting C post checking ...
+
+ *** DUC hardware test PASSED ! *** 
+
+
+D:\opt\source\Vivado\Vivado_HLS_Tutorial\RTL_Verification\lab2\duc_prj\solution1\sim\verilog>call xelab xil_defaultlib.apatb_duc_top -prj duc.prj --lib "ieee_proposed=./ieee_proposed" -s duc -debug wave 
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/opt/winprog/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_duc_top -prj duc.prj --lib ieee_proposed=./ieee_proposed -s duc -debug wave 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_duc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_ama_addmuladd_18s_18s_16s_32s_32_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_ama_addmuladd_18s_18s_16s_32s_32_3_DSP48_1
+INFO: [VRFC 10-311] analyzing module duc_ama_addmuladd_18s_18s_16s_32s_32_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_ama_submuladd_18s_18s_16s_32s_32_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_ama_submuladd_18s_18s_16s_32s_32_3_DSP48_2
+INFO: [VRFC 10-311] analyzing module duc_ama_submuladd_18s_18s_16s_32s_32_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_am_submul_16s_16s_18s_32_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_am_submul_16s_16s_18s_32_4_DSP48_3
+INFO: [VRFC 10-311] analyzing module duc_am_submul_16s_16s_18s_32_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_c.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_c_rom
+INFO: [VRFC 10-311] analyzing module duc_c
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_c_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_c_2_rom
+INFO: [VRFC 10-311] analyzing module duc_c_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_imf2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_imf2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_imf2_c_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_imf2_c_1_rom
+INFO: [VRFC 10-311] analyzing module duc_imf2_c_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_imf2_shift_reg_p_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_imf2_shift_reg_p_1_ram
+INFO: [VRFC 10-311] analyzing module duc_imf2_shift_reg_p_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_imf3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_imf3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_imf3_c_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_imf3_c_1_0_rom
+INFO: [VRFC 10-311] analyzing module duc_imf3_c_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_imf3_c_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_imf3_c_1_1_rom
+INFO: [VRFC 10-311] analyzing module duc_imf3_c_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_imf3_shift_reg_p0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_imf3_shift_reg_p0_ram
+INFO: [VRFC 10-311] analyzing module duc_imf3_shift_reg_p0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_mac_muladd_18s_18s_38ns_38_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_mac_muladd_18s_18s_38ns_38_4_DSP48_0
+INFO: [VRFC 10-311] analyzing module duc_mac_muladd_18s_18s_38ns_38_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_mixer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_mixer
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_mixer_dds_table.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_mixer_dds_table_rom
+INFO: [VRFC 10-311] analyzing module duc_mixer_dds_table
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_mixer_DI_cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_mixer_DI_cache_ram
+INFO: [VRFC 10-311] analyzing module duc_mixer_DI_cache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_shift_reg_p.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_shift_reg_p_ram
+INFO: [VRFC 10-311] analyzing module duc_shift_reg_p
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc_shift_reg_p_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module duc_shift_reg_p_2_ram
+INFO: [VRFC 10-311] analyzing module duc_shift_reg_p_2
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.duc_c_rom
+Compiling module xil_defaultlib.duc_c(DataWidth=18,AddressRange=...
+Compiling module xil_defaultlib.duc_shift_reg_p_ram
+Compiling module xil_defaultlib.duc_shift_reg_p(DataWidth=38,Add...
+Compiling module xil_defaultlib.duc_c_2_rom
+Compiling module xil_defaultlib.duc_c_2(DataWidth=18,AddressRang...
+Compiling module xil_defaultlib.duc_shift_reg_p_2_ram
+Compiling module xil_defaultlib.duc_shift_reg_p_2(DataWidth=38,A...
+Compiling module xil_defaultlib.duc_imf3_c_1_0_rom
+Compiling module xil_defaultlib.duc_imf3_c_1_0(DataWidth=18,Addr...
+Compiling module xil_defaultlib.duc_imf3_shift_reg_p0_ram
+Compiling module xil_defaultlib.duc_imf3_shift_reg_p0(DataWidth=...
+Compiling module xil_defaultlib.duc_imf3_c_1_1_rom
+Compiling module xil_defaultlib.duc_imf3_c_1_1(DataWidth=1,Addre...
+Compiling module xil_defaultlib.duc_mac_muladd_18s_18s_38ns_38_4...
+Compiling module xil_defaultlib.duc_mac_muladd_18s_18s_38ns_38_4...
+Compiling module xil_defaultlib.duc_imf3
+Compiling module xil_defaultlib.duc_mixer_DI_cache_ram
+Compiling module xil_defaultlib.duc_mixer_DI_cache(DataWidth=18,...
+Compiling module xil_defaultlib.duc_mixer_dds_table_rom
+Compiling module xil_defaultlib.duc_mixer_dds_table(DataWidth=16...
+Compiling module xil_defaultlib.duc_ama_addmuladd_18s_18s_16s_32...
+Compiling module xil_defaultlib.duc_ama_addmuladd_18s_18s_16s_32...
+Compiling module xil_defaultlib.duc_ama_submuladd_18s_18s_16s_32...
+Compiling module xil_defaultlib.duc_ama_submuladd_18s_18s_16s_32...
+Compiling module xil_defaultlib.duc_am_submul_16s_16s_18s_32_4_D...
+Compiling module xil_defaultlib.duc_am_submul_16s_16s_18s_32_4(I...
+Compiling module xil_defaultlib.duc_mixer
+Compiling module xil_defaultlib.duc_imf2_c_1_rom
+Compiling module xil_defaultlib.duc_imf2_c_1(DataWidth=18,Addres...
+Compiling module xil_defaultlib.duc_imf2_shift_reg_p_1_ram
+Compiling module xil_defaultlib.duc_imf2_shift_reg_p_1(DataWidth...
+Compiling module xil_defaultlib.duc_imf2
+Compiling module xil_defaultlib.duc
+Compiling module xil_defaultlib.apatb_duc_top
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot duc
+
+****** xsim v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/duc/xsim_script.tcl
+# xsim {duc} -maxdeltaid 10000 -autoloadwcfg -tclbatch {duc.tcl}
+Vivado Simulator 2015.2
+WARNING: Your Simulation license expires in 29 day(s).
+Time resolution is 1 ps
+source duc.tcl
+## add_wave -r /
+WARNING: [Wavedata 42-489] Can't add object "/apatb_duc_top/AESL_mLatCnterIn" to the wave window because it has 107584 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/apatb_duc_top/AESL_mLatCnterOut" to the wave window because it has 107584 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/apatb_duc_top/performance_check/lat_array" to the wave window because it has 107552 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/apatb_duc_top/performance_check/thr_array" to the wave window because it has 107552 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/apatb_duc_top/performance_check/lat_array" to the wave window because it has 107552 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+WARNING: [Wavedata 42-489] Can't add object "/apatb_duc_top/performance_check/thr_array" to the wave window because it has 107552 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+## save_wave_config duc.wcfg
+## run all
+$finish called at time : 294527265 ps : File "D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab2/duc_prj/solution1/sim/verilog/duc.autotb.v" Line 424
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Aug 10 09:13:31 2015...
+
+ *** DUC hardware test PASSED ! *** 
+
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***

@@ -1,0 +1,23 @@
+   Build using "C:/opt/winprog/Xilinx/Vivado_HLS/2015.2/msys/bin/g++.exe"
+   Compiling apatb_fir.cpp
+   Compiling (apcc) fir.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Sat Aug 08 01:47:48 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling (apcc) fir_test.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Sat Aug 08 01:48:06 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Generating cosim.tv.exe

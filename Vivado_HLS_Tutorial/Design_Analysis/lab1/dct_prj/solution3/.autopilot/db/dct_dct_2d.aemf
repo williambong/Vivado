@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1439182111499">
+  <ports id="1" name="in_block" type="PortType" originalName="in_block" coreName="RAM" bitwidth="16" iftype="IfTypeRegister" arraysize="64">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="out_block" type="PortType" originalName="out_block" coreName="RAM" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="64"/>
+  <edges id="110" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="114" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="115" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="116" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="119" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="122" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="123" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="127" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="128" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="130" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="131" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="133" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="136" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="138" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="140" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="145" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="148" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="151" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="152" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="154" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="158" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="162" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="163" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="190" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="192" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="194" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="195" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="196" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="198" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="199" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="201" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="203" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="204" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="205" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="207" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="208" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="209" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="210" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="211" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="212" source_obj="//@regions.1/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="213" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="215" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="216" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="217" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="219" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="220" source_obj="//@regions.1/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="221" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="223" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="224" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="226" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.4"/>
+  <edges id="228" source_obj="//@regions.1/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.5"/>
+  <edges id="229" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.5"/>
+  <edges id="230" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.5"/>
+  <edges id="231" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="233" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="235" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="236" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="238" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="239" source_obj="//@regions.1/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="240" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.3"/>
+  <edges id="264" source_obj="//@regions.1/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.7"/>
+  <edges id="266" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.8"/>
+  <edges id="268" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.9"/>
+  <edges id="269" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="270" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="271" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="272" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="273" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="274" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="275" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="276" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="277" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="278" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="279" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="280" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="281" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="282" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="283" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="284" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="351" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="352" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="353" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="354" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1"/>
+  <edges id="355" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.3"/>
+  <edges id="356" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="357" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="358" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="359" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="360" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3"/>
+  <edges id="361" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.5"/>
+  <edges id="362" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
+  <edges id="363" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.5"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.7"/>
+  <blocks id="15" name="block_15" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_21</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="row_outbuf" rtlName="row_outbuf_U" coreName="RAM" bitwidth="16" opcode="alloca">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="col_outbuf" rtlName="col_outbuf_U" coreName="RAM" bitwidth="16" opcode="alloca">
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="col_inbuf" lineNumber="71" originalName="col_inbuf" fileName="dct.cpp" fileDirectory=".." rtlName="col_inbuf_U" coreName="RAM" contextFuncName="dct_2d" bitwidth="16" opcode="alloca">
+      <inlineStackInfo fileName="dct.cpp" linenumber="71" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="node_14" lineNumber="76" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" opcode="br">
+      <inlineStackInfo fileName="dct.cpp" linenumber="76" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <controlInputObjs>block_21</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>71</validLinenumbers>
+      <validLinenumbers>76</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="21" name="block_21" type="BlockType">
+    <controlInputObjs>block_15</controlInputObjs>
+    <controlInputObjs>block_25</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader7.preheader</controlOutputObjs>
+    <controlOutputObjs>block_25</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="i" originalName="i" bitwidth="4" opcode="phi" nodeLabel="1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <controlInputObjs>block_15</controlInputObjs>
+      <controlInputObjs>block_25</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="exitcond5" lineNumber="76" fileName="dct.cpp" fileDirectory=".." rtlName="exitcond5_fu_252_p2" contextFuncName="dct_2d" bitwidth="1" opcode="icmp" nodeLabel="1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="76" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="i_4" lineNumber="76" originalName="i" fileName="dct.cpp" fileDirectory=".." rtlName="i_4_fu_258_p2" contextFuncName="dct_2d" bitwidth="4" opcode="add" nodeLabel="1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="76" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="node_20" lineNumber="76" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" opcode="br" nodeLabel="1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="76" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_25</controlInputObjs>
+      <controlInputObjs>.preheader7.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>76</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="25" name="block_25" type="BlockType">
+    <controlInputObjs>block_21</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_21</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="node_23" lineNumber="77" fileName="dct.cpp" fileDirectory=".." rtlName="grp_dct_dct_1d_fu_223" contextFuncName="dct_2d" opcode="call" nodeLabel="1" nodeLatency="1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="77" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <dataInputObjs>in_block</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <constName>dct_dct_1d</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="node_24" lineNumber="76" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" opcode="br" nodeLabel="2">
+      <inlineStackInfo fileName="dct.cpp" linenumber="76" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <controlInputObjs>block_21</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>77</validLinenumbers>
+      <validLinenumbers>76</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="65" name=".preheader6" type="BlockType">
+    <controlInputObjs>.preheader7.preheader</controlInputObjs>
+    <controlInputObjs>block_69</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+    <controlOutputObjs>block_69</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="i_2" originalName="i" bitwidth="4" opcode="phi" nodeLabel="3">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <controlInputObjs>block_69</controlInputObjs>
+      <controlInputObjs>.preheader7.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="exitcond2" lineNumber="87" fileName="dct.cpp" fileDirectory=".." rtlName="exitcond2_fu_362_p2" contextFuncName="dct_2d" bitwidth="1" opcode="icmp" nodeLabel="3">
+      <inlineStackInfo fileName="dct.cpp" linenumber="87" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="i_5" lineNumber="87" originalName="i" fileName="dct.cpp" fileDirectory=".." rtlName="i_5_fu_368_p2" contextFuncName="dct_2d" bitwidth="4" opcode="add" nodeLabel="3">
+      <inlineStackInfo fileName="dct.cpp" linenumber="87" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="node_64" lineNumber="87" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" opcode="br" nodeLabel="3">
+      <inlineStackInfo fileName="dct.cpp" linenumber="87" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_69</controlInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>87</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="69" name="block_69" type="BlockType">
+    <controlInputObjs>.preheader6</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader6</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="node_67" lineNumber="88" fileName="dct.cpp" fileDirectory=".." rtlName="grp_dct_dct_1d_fu_223" contextFuncName="dct_2d" opcode="call" nodeLabel="3" nodeLatency="1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="88" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <constName>dct_dct_1d</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="node_68" lineNumber="87" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" opcode="br" nodeLabel="4">
+      <inlineStackInfo fileName="dct.cpp" linenumber="87" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+      <controlInputObjs>.preheader6</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>88</validLinenumbers>
+      <validLinenumbers>87</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="105" name="block_105" type="BlockType">
+    <controlInputObjs>.preheader.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="node_104" lineNumber="96" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" opcode="ret" nodeLabel="5">
+      <inlineStackInfo fileName="dct.cpp" linenumber="96" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>96</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="390" pipe_depth="2" RegionName="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop">
+    <basic_blocks id="32" name=".preheader7.preheader" type="BlockType">
+      <controlInputObjs>block_21</controlInputObjs>
+      <controlInputObjs>.preheader7</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>.preheader6</controlOutputObjs>
+      <controlOutputObjs>.preheader7</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="indvar_flatten" bitwidth="7" opcode="phi" nodeLabel="2">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>.preheader7</controlInputObjs>
+        <controlInputObjs>block_21</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="j" lineNumber="83" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" bitwidth="4" opcode="phi" nodeLabel="2">
+        <inlineStackInfo fileName="dct.cpp" linenumber="83" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.preheader7</controlInputObjs>
+        <controlInputObjs>block_21</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="i_1" originalName="i" bitwidth="4" opcode="phi" nodeLabel="2">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.preheader7</controlInputObjs>
+        <controlInputObjs>block_21</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="exitcond_flatten" rtlName="exitcond_flatten_fu_264_p2" bitwidth="1" opcode="icmp" nodeLabel="2">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="indvar_flatten_next" rtlName="indvar_flatten_next_fu_270_p2" bitwidth="7" opcode="add" nodeLabel="2">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="node_31" opcode="br" nodeLabel="2">
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.preheader7</controlInputObjs>
+        <controlInputObjs>.preheader6</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dct.cpp">
+        <validLinenumbers>83</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="59" name=".preheader7" type="BlockType">
+      <controlInputObjs>.preheader7.preheader</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader7.preheader</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="exitcond" lineNumber="83" fileName="dct.cpp" fileDirectory=".." rtlName="exitcond_fu_276_p2" contextFuncName="dct_2d" bitwidth="1" opcode="icmp" nodeLabel="2">
+        <inlineStackInfo fileName="dct.cpp" linenumber="83" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="i_1_mid2" lineNumber="83" fileName="dct.cpp" fileDirectory=".." rtlName="i_1_mid2_fu_282_p3" contextFuncName="dct_2d" bitwidth="4" opcode="select" nodeLabel="2">
+        <inlineStackInfo fileName="dct.cpp" linenumber="83" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="j_s" lineNumber="81" fileName="dct.cpp" fileDirectory=".." rtlName="j_s_fu_290_p2" contextFuncName="dct_2d" bitwidth="4" opcode="add" nodeLabel="2">
+        <inlineStackInfo fileName="dct.cpp" linenumber="81" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="j_mid2" lineNumber="83" fileName="dct.cpp" fileDirectory=".." rtlName="j_mid2_fu_296_p3" contextFuncName="dct_2d" bitwidth="4" opcode="select" nodeLabel="2">
+        <inlineStackInfo fileName="dct.cpp" linenumber="83" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="p_addr5" lineNumber="84" fileName="dct.cpp" fileDirectory=".." rtlName="p_addr5_fu_320_p2" contextFuncName="dct_2d" bitwidth="8" opcode="add" nodeLabel="2">
+        <inlineStackInfo fileName="dct.cpp" linenumber="84" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="row_outbuf_load" lineNumber="84" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLabel="2" nodeLatency="1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="84" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="p_addr7" lineNumber="84" fileName="dct.cpp" fileDirectory=".." rtlName="p_addr7_fu_351_p2" contextFuncName="dct_2d" bitwidth="8" opcode="add" nodeLabel="3">
+        <inlineStackInfo fileName="dct.cpp" linenumber="84" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="node_55" lineNumber="84" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" opcode="store" nodeLabel="3">
+        <inlineStackInfo fileName="dct.cpp" linenumber="84" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="i_6" lineNumber="83" originalName="i" fileName="dct.cpp" fileDirectory=".." rtlName="i_6_fu_331_p2" contextFuncName="dct_2d" bitwidth="4" opcode="add" nodeLabel="2">
+        <inlineStackInfo fileName="dct.cpp" linenumber="83" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="node_58" opcode="br" nodeLabel="3">
+        <controlInputObjs>.preheader7.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dct.cpp">
+        <validLinenumbers>83</validLinenumbers>
+        <validLinenumbers>81</validLinenumbers>
+        <validLinenumbers>84</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="391" pipe_depth="2" RegionName="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop">
+    <basic_blocks id="76" name=".preheader.preheader" type="BlockType">
+      <controlInputObjs>.preheader6</controlInputObjs>
+      <controlInputObjs>.preheader</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_105</controlOutputObjs>
+      <controlOutputObjs>.preheader</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="indvar_flatten2" bitwidth="7" opcode="phi" nodeLabel="4">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>.preheader</controlInputObjs>
+        <controlInputObjs>.preheader6</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="j_1" lineNumber="94" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" bitwidth="4" opcode="phi" nodeLabel="4">
+        <inlineStackInfo fileName="dct.cpp" linenumber="94" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.preheader</controlInputObjs>
+        <controlInputObjs>.preheader6</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="i_3" originalName="i" bitwidth="4" opcode="phi" nodeLabel="4">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>.preheader</controlInputObjs>
+        <controlInputObjs>.preheader6</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="exitcond_flatten2" rtlName="exitcond_flatten2_fu_374_p2" bitwidth="1" opcode="icmp" nodeLabel="4">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="indvar_flatten_next2" rtlName="indvar_flatten_next2_fu_380_p2" bitwidth="7" opcode="add" nodeLabel="4">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="node_75" opcode="br" nodeLabel="4">
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.preheader</controlInputObjs>
+        <controlInputObjs>block_105</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dct.cpp">
+        <validLinenumbers>94</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="103" name=".preheader" type="BlockType">
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="exitcond1" lineNumber="94" fileName="dct.cpp" fileDirectory=".." rtlName="exitcond1_fu_386_p2" contextFuncName="dct_2d" bitwidth="1" opcode="icmp" nodeLabel="4">
+        <inlineStackInfo fileName="dct.cpp" linenumber="94" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="i_3_mid2" lineNumber="94" fileName="dct.cpp" fileDirectory=".." rtlName="i_3_mid2_fu_392_p3" contextFuncName="dct_2d" bitwidth="4" opcode="select" nodeLabel="4">
+        <inlineStackInfo fileName="dct.cpp" linenumber="94" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="j_2" lineNumber="92" fileName="dct.cpp" fileDirectory=".." rtlName="j_2_fu_400_p2" contextFuncName="dct_2d" bitwidth="4" opcode="add" nodeLabel="4">
+        <inlineStackInfo fileName="dct.cpp" linenumber="92" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="j_1_mid2" lineNumber="94" fileName="dct.cpp" fileDirectory=".." rtlName="j_1_mid2_fu_406_p3" contextFuncName="dct_2d" bitwidth="4" opcode="select" nodeLabel="4">
+        <inlineStackInfo fileName="dct.cpp" linenumber="94" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="p_addr9" lineNumber="95" fileName="dct.cpp" fileDirectory=".." rtlName="p_addr9_fu_430_p2" contextFuncName="dct_2d" bitwidth="8" opcode="add" nodeLabel="4">
+        <inlineStackInfo fileName="dct.cpp" linenumber="95" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="col_outbuf_load" lineNumber="95" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" bitwidth="16" opcode="load" nodeLabel="4" nodeLatency="1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="95" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="p_addr4" lineNumber="95" fileName="dct.cpp" fileDirectory=".." rtlName="p_addr4_fu_461_p2" contextFuncName="dct_2d" bitwidth="8" opcode="add" nodeLabel="5">
+        <inlineStackInfo fileName="dct.cpp" linenumber="95" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="node_99" lineNumber="95" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_2d" opcode="store" nodeLabel="5">
+        <inlineStackInfo fileName="dct.cpp" linenumber="95" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="i_7" lineNumber="94" originalName="i" fileName="dct.cpp" fileDirectory=".." rtlName="i_7_fu_441_p2" contextFuncName="dct_2d" bitwidth="4" opcode="add" nodeLabel="4">
+        <inlineStackInfo fileName="dct.cpp" linenumber="94" fileDirectory="d:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Analysis/lab1" functionName="dct_2d"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="node_102" opcode="br" nodeLabel="5">
+        <controlInputObjs>.preheader.preheader</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dct.cpp">
+        <validLinenumbers>94</validLinenumbers>
+        <validLinenumbers>92</validLinenumbers>
+        <validLinenumbers>95</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <regnodes realName="row_outbuf_addr_reg_501">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond5_reg_472">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="col_outbuf_addr_reg_540">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="i_7_reg_545">
+    <nodeIds>101</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_next_reg_485">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_133">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="i_3_mid2_reg_529">
+    <nodeIds>80</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_167">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="i_5_reg_515">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_156">
+    <nodeIds>27</nodeIds>
+  </regnodes>
+  <regnodes realName="i_3_reg_212">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond2_reg_511">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="j_1_mid2_reg_534">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="i_6_reg_506">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="i_2_reg_178">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="j_1_reg_201">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_mid2_reg_490">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten2_reg_190">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond_flatten2_reg_520">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond_flatten_reg_481">
+    <nodeIds>29</nodeIds>
+  </regnodes>
+  <regnodes realName="i_4_reg_476">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_reg_145">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_next2_reg_524">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="j_mid2_reg_495">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <expressionNodes realName="j_mid2_fu_296">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_trn_cast_fu_304">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr4_fu_461">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_fu_276">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_addr_gep_fu_97">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_436">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_3_mid2_fu_392">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_trn_cast_fu_447">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_phi_fu_171">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond1_fu_386">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_5_fu_368">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_326">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr8_cast_fu_426">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_3_phi_fu_216">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_137">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr6_cast_fu_347">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr_cast_fu_316">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_4_fu_258">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_308">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_6_fu_331">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_2_phi_fu_182">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten2_phi_fu_194">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_2_fu_400">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="row_outbuf_addr_gep_fu_86">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_trn_cast_fu_414">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_s_fu_290">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_340">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_450">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_mid2_fu_282">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr3_cast_fu_457">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond2_fu_362">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr5_fu_320">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_7_fu_441">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="row_outbuf_alloca_fu_74">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_1_phi_fu_205">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_trn_cast_fu_337">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_phi_fu_149">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_1_mid2_fu_406">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_467">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_next_fu_270">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_inbuf_alloca_fu_82">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_outbuf_alloca_fu_78">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_block_addr_gep_fu_120">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_flatten_fu_264">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_phi_fu_160">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_flatten2_fu_374">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr9_fu_430">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond5_fu_252">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_next2_fu_380">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_addr7_fu_351">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_357">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_418">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="col_outbuf_addr_gep_fu_109">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_dct_dct_1d_fu_223">
+    <nodeIds>23</nodeIds>
+    <nodeIds>67</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="col_inbuf">
+    <nodeIds>55</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_inbuf" portID="100">
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_outbuf">
+    <nodeIds>93</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="col_outbuf" portID="100">
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_0" portID="100">
+    <nodeIds>23</nodeIds>
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_1" portID="100">
+    <nodeIds>23</nodeIds>
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_2" portID="100">
+    <nodeIds>23</nodeIds>
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_3" portID="100">
+    <nodeIds>23</nodeIds>
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_4" portID="100">
+    <nodeIds>23</nodeIds>
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_5" portID="100">
+    <nodeIds>23</nodeIds>
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_6" portID="100">
+    <nodeIds>23</nodeIds>
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_7" portID="100">
+    <nodeIds>23</nodeIds>
+    <nodeIds>67</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="out_block">
+    <nodeIds>99</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="row_outbuf">
+    <nodeIds>49</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="row_outbuf" portID="100">
+    <nodeIds>23</nodeIds>
+  </memoryPorts>
+  <ioPorts name="out_block(p0)">
+    <contents name="store">
+      <nodeIds>99</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="23" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="2"/>
+      <operations id="24" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="2" latency="2"/>
+      <operations id="57" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="2"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="67" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="2"/>
+      <operations id="68" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="2" latency="2"/>
+      <operations id="101" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="2"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="104" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="51"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="54"/>
+    </transitions>
+    <transitions inState="2" outState="4">
+      <condition id="53"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="57"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="66"/>
+    </transitions>
+    <transitions inState="6" outState="8">
+      <condition id="65"/>
+    </transitions>
+    <transitions inState="7" outState="6">
+      <condition id="69"/>
+    </transitions>
+    <transitions inState="5" outState="4">
+      <condition id="77"/>
+    </transitions>
+    <transitions inState="4" outState="6">
+      <condition id="76"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="78"/>
+    </transitions>
+    <transitions inState="9" outState="8">
+      <condition id="80"/>
+    </transitions>
+    <transitions inState="8" outState="10">
+      <condition id="79"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="81"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dct_dct_2d" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="757" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>15</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Row_DCT_Loop" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="312" mMaxLatency="-1" mType="1">
+      <basicBlocks>21</basicBlocks>
+      <basicBlocks>25</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop" mII="1" mDepth="2" mMinTripCount="64" mMaxTripCount="64" mMinLatency="64" mMaxLatency="-1" mType="1">
+      <basicBlocks>32</basicBlocks>
+      <basicBlocks>59</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Col_DCT_Loop" mII="-1" mDepth="-1" mMinTripCount="8" mMaxTripCount="8" mMinLatency="312" mMaxLatency="-1" mType="1">
+      <basicBlocks>65</basicBlocks>
+      <basicBlocks>69</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop" mII="1" mDepth="2" mMinTripCount="64" mMaxTripCount="64" mMinLatency="64" mMaxLatency="-1" mType="1">
+      <basicBlocks>76</basicBlocks>
+      <basicBlocks>103</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>105</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

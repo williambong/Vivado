@@ -1,0 +1,12 @@
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/opt/winprog/Xilinx/Vivado/2015.2/data/ip'.
+ipx::add_bus_interface: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 212.734 ; gain = 14.129
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 08 01:49:16 2015...

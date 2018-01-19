@@ -1,0 +1,87 @@
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "C:/opt/winprog/Xilinx/Vivado_HLS/2015.2/msys/bin/g++.exe"
+   Compiling apatb_fir.cpp
+   Compiling (apcc) fir.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Sat Aug 08 01:47:48 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling (apcc) fir_test.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Sat Aug 08 01:48:06 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-323] Starting verilog simulation. 
+@I [SIM-15] Starting XSIM ...
+@I [SIM-316] Starting C post checking ...
+Comparing against output data 
+*******************************************
+PASS: The output matches the golden output!
+*******************************************
+
+D:\opt\source\Vivado\Vivado_HLS_Tutorial\Introduction\lab3\fir_prj\solution1\sim\verilog>call xelab xil_defaultlib.apatb_fir_top -prj fir.prj --lib "ieee_proposed=./ieee_proposed" -s fir  
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/opt/winprog/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_fir_top -prj fir.prj --lib ieee_proposed=./ieee_proposed -s fir 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/AESL_automem_c.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_c
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_fir_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir_mul_32s_32s_32_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_mul_32s_32s_32_3_Mul3S_0
+INFO: [VRFC 10-311] analyzing module fir_mul_32s_32s_32_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir_shift_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir_shift_reg_ram
+INFO: [VRFC 10-311] analyzing module fir_shift_reg
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fir_shift_reg_ram
+Compiling module xil_defaultlib.fir_shift_reg(DataWidth=32,Addre...
+Compiling module xil_defaultlib.fir_mul_32s_32s_32_3_Mul3S_0
+Compiling module xil_defaultlib.fir_mul_32s_32s_32_3(ID=1,NUM_ST...
+Compiling module xil_defaultlib.fir
+Compiling module xil_defaultlib.AESL_automem_c
+Compiling module xil_defaultlib.apatb_fir_top
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot fir
+
+****** xsim v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/fir/xsim_script.tcl
+# xsim {fir} -maxdeltaid 10000 -autoloadwcfg -tclbatch {fir.tcl}
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source fir.tcl
+## run all
+$finish called at time : 474935400 ps : File "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir.autotb.v" Line 354
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug 08 01:48:35 2015...
+Comparing against output data 
+*******************************************
+PASS: The output matches the golden output!
+*******************************************
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***

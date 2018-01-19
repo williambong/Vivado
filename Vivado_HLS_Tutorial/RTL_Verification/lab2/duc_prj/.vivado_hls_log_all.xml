@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Register 'cnt_1' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:38.417+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'ch_3' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:38.383+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'init_4' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:38.372+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'in_3' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:38.361+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'i_4' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:38.350+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'ch' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:38.341+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'init' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:38.332+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'in_r' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:38.321+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'i' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:38.311+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.988+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'index' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.953+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'ch_1' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.942+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'init_1' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.932+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'i_1' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.920+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'init_2' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.459+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'j' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.420+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'in_1' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.410+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'i_2' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.400+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'cnt' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.032+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'ch_2' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.022+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'init_3' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.013+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'in_2' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:37.006+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'i_3' is power-on initialization." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:36.995+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'duc/in' to 'duc/in_r' to avoid the conflict with HDL keywords or other object names." projectName="duc_prj" solutionName="solution1" date="2015-08-10T09:10:35.755+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,23 @@
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'C:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Sat Aug 08 00:24:09 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab1'
+@I [HLS-10] Opening project 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab1/fir_prj'.
+@I [HLS-10] Opening solution 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab1/fir_prj/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Setting target device to 'xc7a200tfbg484-2'
+@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/opt/winprog/Xilinx/Vivado/2015.2/data/ip'.
+ipx::add_bus_interface: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 206.895 ; gain = 13.598
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 08 00:24:35 2015...
+@I [LIC-101] Checked in feature [HLS]

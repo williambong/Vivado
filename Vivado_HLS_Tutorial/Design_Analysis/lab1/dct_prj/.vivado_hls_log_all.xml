@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [SCHED-21] The critical path consists of the following:&#xD;&#xA;&#x9;'mul' operation ('tmp_8_5_i', dct.cpp:61->dct.cpp:88->dct.cpp:130) (2.84 ns)&#xD;&#xA;&#x9;'add' operation ('tmp4', dct.cpp:63->dct.cpp:88->dct.cpp:130) (2.95 ns)&#xD;&#xA;&#x9;'add' operation ('tmp3', dct.cpp:63->dct.cpp:88->dct.cpp:130) (1.7 ns)&#xD;&#xA;&#x9;'add' operation ('tmp_2_i', dct.cpp:63->dct.cpp:88->dct.cpp:130) (1.44 ns)" projectName="dct_prj" solutionName="solution6" date="2015-08-10T14:23:07.136+0800" type="Warning"/>
+        <logs message="@W [SCHED-21] Estimated clock period (8.93ns) exceeds the target (target clock period: 8ns, clock uncertainty: 1ns, effective delay budget: 7ns)." projectName="dct_prj" solutionName="solution6" date="2015-08-10T14:23:07.126+0800" type="Warning"/>
+        <logs message="@W [SCHED-21] The critical path consists of the following:&#xD;&#xA;&#x9;'mul' operation ('tmp_8_5_i', dct.cpp:61->dct.cpp:77->dct.cpp:130) (2.84 ns)&#xD;&#xA;&#x9;'add' operation ('tmp4', dct.cpp:63->dct.cpp:77->dct.cpp:130) (2.95 ns)&#xD;&#xA;&#x9;'add' operation ('tmp3', dct.cpp:63->dct.cpp:77->dct.cpp:130) (1.7 ns)&#xD;&#xA;&#x9;'add' operation ('tmp_2_i', dct.cpp:63->dct.cpp:77->dct.cpp:130) (1.44 ns)" projectName="dct_prj" solutionName="solution6" date="2015-08-10T14:23:06.551+0800" type="Warning"/>
+        <logs message="@W [SCHED-21] Estimated clock period (8.93ns) exceeds the target (target clock period: 8ns, clock uncertainty: 1ns, effective delay budget: 7ns)." projectName="dct_prj" solutionName="solution6" date="2015-08-10T14:23:06.537+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution6" date="2015-08-10T14:23:06.204+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution6" date="2015-08-10T14:23:06.195+0800" type="Warning"/>
+        <logs message="@W [SCHED-21] The critical path consists of the following:&#xD;&#xA;&#x9;'mul' operation ('tmp_8', dct.cpp:61) (2.84 ns)&#xD;&#xA;&#x9;'add' operation ('tmp2', dct.cpp:63) (2.95 ns)&#xD;&#xA;&#x9;'add' operation ('tmp1', dct.cpp:63) (1.7 ns)&#xD;&#xA;&#x9;'add' operation ('tmp_2', dct.cpp:63) (1.44 ns)" projectName="dct_prj" solutionName="solution5" date="2015-08-10T14:05:41.202+0800" type="Warning"/>
+        <logs message="@W [SCHED-21] Estimated clock period (8.93ns) exceeds the target (target clock period: 8ns, clock uncertainty: 1ns, effective delay budget: 7ns)." projectName="dct_prj" solutionName="solution5" date="2015-08-10T14:05:41.182+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution5" date="2015-08-10T14:05:40.861+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution5" date="2015-08-10T14:05:40.828+0800" type="Warning"/>
+        <logs message="@W [SCHED-21] The critical path consists of the following:&#xD;&#xA;&#x9;'mul' operation ('tmp_8', dct.cpp:61) (2.84 ns)&#xD;&#xA;&#x9;'add' operation ('tmp2', dct.cpp:63) (2.95 ns)&#xD;&#xA;&#x9;'add' operation ('tmp1', dct.cpp:63) (1.7 ns)&#xD;&#xA;&#x9;'add' operation ('tmp_2', dct.cpp:63) (1.44 ns)&#xD;&#xA;&#x9;'partselect' operation ('tmp_4', dct.cpp:63) (0 ns)" projectName="dct_prj" solutionName="solution4" date="2015-08-10T13:48:55.908+0800" type="Warning"/>
+        <logs message="@W [SCHED-21] Estimated clock period (8.93ns) exceeds the target (target clock period: 8ns, clock uncertainty: 1ns, effective delay budget: 7ns)." projectName="dct_prj" solutionName="solution4" date="2015-08-10T13:48:55.896+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution4" date="2015-08-10T13:48:55.564+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution4" date="2015-08-10T13:48:55.552+0800" type="Warning"/>
+        <logs message="@W [SCHED-21] The critical path consists of the following:&#xD;&#xA;&#x9;'mul' operation ('tmp_8_7', dct.cpp:61) (2.84 ns)&#xD;&#xA;&#x9;'add' operation ('tmp7', dct.cpp:63) (2.95 ns)&#xD;&#xA;&#x9;'add' operation ('tmp6', dct.cpp:63) (2.95 ns)" projectName="dct_prj" solutionName="solution3" date="2015-08-10T12:48:29.798+0800" type="Warning"/>
+        <logs message="@W [SCHED-21] Estimated clock period (8.74ns) exceeds the target (target clock period: 8ns, clock uncertainty: 1ns, effective delay budget: 7ns)." projectName="dct_prj" solutionName="solution3" date="2015-08-10T12:48:29.788+0800" type="Warning"/>
+        <logs message="@W [SCHED-69] Unable to schedule 'load' operation ('src_load_5', dct.cpp:61) on array 'src' due to limited memory ports." projectName="dct_prj" solutionName="solution3" date="2015-08-10T12:48:29.755+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution3" date="2015-08-10T12:48:29.642+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution3" date="2015-08-10T12:48:29.632+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution2" date="2015-08-10T12:02:44.462+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution2" date="2015-08-10T12:02:44.449+0800" type="Warning"/>
+        <logs message="@W [XFORM-542] Cannot flatten a loop nest 'DCT_Outer_Loop' (dct.cpp:57:67) in function 'dct_1d' : &#xD;&#xA;               the outer loop is not a perfect loop because there is nontrivial logic in the loop latch." projectName="dct_prj" solutionName="solution2" date="2015-08-10T12:02:44.321+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution1" date="2015-08-08T23:01:36.707+0800" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution1" date="2015-08-08T23:01:36.673+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

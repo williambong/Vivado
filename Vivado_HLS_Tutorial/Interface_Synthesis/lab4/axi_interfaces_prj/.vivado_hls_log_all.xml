@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Register 'acc_7' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2015-08-08T16:37:25.717+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_6' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2015-08-08T16:37:25.659+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_5' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2015-08-08T16:37:25.647+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_4' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2015-08-08T16:37:25.637+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_3' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2015-08-08T16:37:25.618+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_2' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2015-08-08T16:37:25.590+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_1' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2015-08-08T16:37:25.570+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_0' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution2" date="2015-08-08T16:37:25.556+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_7' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2015-08-08T16:28:53.167+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_6' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2015-08-08T16:28:53.120+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_5' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2015-08-08T16:28:53.103+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_4' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2015-08-08T16:28:53.088+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_3' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2015-08-08T16:28:53.079+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_2' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2015-08-08T16:28:53.066+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_1' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2015-08-08T16:28:53.056+0800" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'acc_0' is power-on initialization." projectName="axi_interfaces_prj" solutionName="solution1" date="2015-08-08T16:28:53.047+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

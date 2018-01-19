@@ -1,0 +1,14 @@
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'C:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Sat Aug 08 14:12:42 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/C_Validation/lab3'
+@I [HLS-10] Opening project 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/C_Validation/lab3/hamming_window_prj'.
+@I [HLS-10] Opening solution 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/C_Validation/lab3/hamming_window_prj/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 5ns.
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Setting target device to 'xc7k160tfbg484-1'
+   Compiling ../../../../hamming_window_test.cpp in debug mode
+   Compiling ../../../../hamming_window.cpp in debug mode
+   Generating csim.exe
+@I [SIM-1] CSim file generation done with 0 errors.
+@I [LIC-101] Checked in feature [HLS]

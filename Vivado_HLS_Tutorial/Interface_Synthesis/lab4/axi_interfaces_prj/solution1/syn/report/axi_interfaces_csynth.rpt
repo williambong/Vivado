@@ -1,0 +1,215 @@
+
+
+================================================================
+== Vivado HLS Report for 'axi_interfaces'
+================================================================
+* Date:           Sat Aug 08 16:28:53 2015
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        axi_interfaces_prj
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      2.65|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    3|    4|    4|    5|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+        |            |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- For_Loop  |    3|    3|         1|          1|          1|     4|    yes   |
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|Expression       |        -|      -|       0|     274|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|      14|
+|Register         |        -|      -|     271|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|     271|     288|
++-----------------+---------+-------+--------+--------+
+|Available        |      650|    600|  202800|  101400|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name   | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |i_1_7_fu_429_p2     |     +    |      0|  0|   6|           4|           6|
+    |tmp_3_1_fu_262_p2   |     +    |      0|  0|  32|          32|          32|
+    |tmp_3_2_fu_287_p2   |     +    |      0|  0|  32|          32|          32|
+    |tmp_3_3_fu_312_p2   |     +    |      0|  0|  32|          32|          32|
+    |tmp_3_4_fu_337_p2   |     +    |      0|  0|  32|          32|          32|
+    |tmp_3_5_fu_362_p2   |     +    |      0|  0|  32|          32|          32|
+    |tmp_3_6_fu_387_p2   |     +    |      0|  0|  32|          32|          32|
+    |tmp_3_7_fu_412_p2   |     +    |      0|  0|  32|          32|          32|
+    |tmp_3_fu_237_p2     |     +    |      0|  0|  32|          32|          32|
+    |ap_sig_bdd_327      |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_329      |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_331      |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_333      |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_335      |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_337      |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_339      |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_341      |    and   |      0|  0|   1|           1|           1|
+    |exitcond_fu_439_p2  |   icmp   |      0|  0|   3|           6|           7|
+    |ap_sig_bdd_109      |    or    |      0|  0|   1|           1|           1|
+    +--------------------+----------+-------+---+----+------------+------------+
+    |Total               |          |      0|  0| 274|         275|         278|
+    +--------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |   1|          3|    1|          3|
+    |ap_sig_ioackin_d_o_0_TREADY  |   1|          2|    1|          2|
+    |ap_sig_ioackin_d_o_1_TREADY  |   1|          2|    1|          2|
+    |ap_sig_ioackin_d_o_2_TREADY  |   1|          2|    1|          2|
+    |ap_sig_ioackin_d_o_3_TREADY  |   1|          2|    1|          2|
+    |ap_sig_ioackin_d_o_4_TREADY  |   1|          2|    1|          2|
+    |ap_sig_ioackin_d_o_5_TREADY  |   1|          2|    1|          2|
+    |ap_sig_ioackin_d_o_6_TREADY  |   1|          2|    1|          2|
+    |ap_sig_ioackin_d_o_7_TREADY  |   1|          2|    1|          2|
+    |i1_reg_211                   |   5|          2|    5|         10|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        |  14|         21|   14|         29|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------+----+----+-----+-----------+
+    |             Name            | FF | LUT| Bits| Const Bits|
+    +-----------------------------+----+----+-----+-----------+
+    |acc_0                        |  32|   0|   32|          0|
+    |acc_1                        |  32|   0|   32|          0|
+    |acc_2                        |  32|   0|   32|          0|
+    |acc_3                        |  32|   0|   32|          0|
+    |acc_4                        |  32|   0|   32|          0|
+    |acc_5                        |  32|   0|   32|          0|
+    |acc_6                        |  32|   0|   32|          0|
+    |acc_7                        |  32|   0|   32|          0|
+    |ap_CS_fsm                    |   2|   0|    2|          0|
+    |ap_reg_ioackin_d_o_0_TREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_d_o_1_TREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_d_o_2_TREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_d_o_3_TREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_d_o_4_TREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_d_o_5_TREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_d_o_6_TREADY  |   1|   0|    1|          0|
+    |ap_reg_ioackin_d_o_7_TREADY  |   1|   0|    1|          0|
+    |i1_reg_211                   |   5|   0|    5|          0|
+    +-----------------------------+----+----+-----+-----------+
+    |Total                        | 271|   0|  271|          0|
+    +-----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+----------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++--------------+-----+-----+------------+----------------+--------------+
+|ap_clk        |  in |    1| ap_ctrl_hs | axi_interfaces | return value |
+|ap_rst_n      |  in |    1| ap_ctrl_hs | axi_interfaces | return value |
+|ap_start      |  in |    1| ap_ctrl_hs | axi_interfaces | return value |
+|ap_done       | out |    1| ap_ctrl_hs | axi_interfaces | return value |
+|ap_idle       | out |    1| ap_ctrl_hs | axi_interfaces | return value |
+|ap_ready      | out |    1| ap_ctrl_hs | axi_interfaces | return value |
+|d_o_0_TDATA   | out |   16|    axis    |      d_o_0     |    pointer   |
+|d_o_0_TVALID  | out |    1|    axis    |      d_o_0     |    pointer   |
+|d_o_0_TREADY  |  in |    1|    axis    |      d_o_0     |    pointer   |
+|d_o_1_TDATA   | out |   16|    axis    |      d_o_1     |    pointer   |
+|d_o_1_TVALID  | out |    1|    axis    |      d_o_1     |    pointer   |
+|d_o_1_TREADY  |  in |    1|    axis    |      d_o_1     |    pointer   |
+|d_o_2_TDATA   | out |   16|    axis    |      d_o_2     |    pointer   |
+|d_o_2_TVALID  | out |    1|    axis    |      d_o_2     |    pointer   |
+|d_o_2_TREADY  |  in |    1|    axis    |      d_o_2     |    pointer   |
+|d_o_3_TDATA   | out |   16|    axis    |      d_o_3     |    pointer   |
+|d_o_3_TVALID  | out |    1|    axis    |      d_o_3     |    pointer   |
+|d_o_3_TREADY  |  in |    1|    axis    |      d_o_3     |    pointer   |
+|d_o_4_TDATA   | out |   16|    axis    |      d_o_4     |    pointer   |
+|d_o_4_TVALID  | out |    1|    axis    |      d_o_4     |    pointer   |
+|d_o_4_TREADY  |  in |    1|    axis    |      d_o_4     |    pointer   |
+|d_o_5_TDATA   | out |   16|    axis    |      d_o_5     |    pointer   |
+|d_o_5_TVALID  | out |    1|    axis    |      d_o_5     |    pointer   |
+|d_o_5_TREADY  |  in |    1|    axis    |      d_o_5     |    pointer   |
+|d_o_6_TDATA   | out |   16|    axis    |      d_o_6     |    pointer   |
+|d_o_6_TVALID  | out |    1|    axis    |      d_o_6     |    pointer   |
+|d_o_6_TREADY  |  in |    1|    axis    |      d_o_6     |    pointer   |
+|d_o_7_TDATA   | out |   16|    axis    |      d_o_7     |    pointer   |
+|d_o_7_TVALID  | out |    1|    axis    |      d_o_7     |    pointer   |
+|d_o_7_TREADY  |  in |    1|    axis    |      d_o_7     |    pointer   |
+|d_i_0_TDATA   |  in |   16|    axis    |      d_i_0     |    pointer   |
+|d_i_0_TVALID  |  in |    1|    axis    |      d_i_0     |    pointer   |
+|d_i_0_TREADY  | out |    1|    axis    |      d_i_0     |    pointer   |
+|d_i_1_TDATA   |  in |   16|    axis    |      d_i_1     |    pointer   |
+|d_i_1_TVALID  |  in |    1|    axis    |      d_i_1     |    pointer   |
+|d_i_1_TREADY  | out |    1|    axis    |      d_i_1     |    pointer   |
+|d_i_2_TDATA   |  in |   16|    axis    |      d_i_2     |    pointer   |
+|d_i_2_TVALID  |  in |    1|    axis    |      d_i_2     |    pointer   |
+|d_i_2_TREADY  | out |    1|    axis    |      d_i_2     |    pointer   |
+|d_i_3_TDATA   |  in |   16|    axis    |      d_i_3     |    pointer   |
+|d_i_3_TVALID  |  in |    1|    axis    |      d_i_3     |    pointer   |
+|d_i_3_TREADY  | out |    1|    axis    |      d_i_3     |    pointer   |
+|d_i_4_TDATA   |  in |   16|    axis    |      d_i_4     |    pointer   |
+|d_i_4_TVALID  |  in |    1|    axis    |      d_i_4     |    pointer   |
+|d_i_4_TREADY  | out |    1|    axis    |      d_i_4     |    pointer   |
+|d_i_5_TDATA   |  in |   16|    axis    |      d_i_5     |    pointer   |
+|d_i_5_TVALID  |  in |    1|    axis    |      d_i_5     |    pointer   |
+|d_i_5_TREADY  | out |    1|    axis    |      d_i_5     |    pointer   |
+|d_i_6_TDATA   |  in |   16|    axis    |      d_i_6     |    pointer   |
+|d_i_6_TVALID  |  in |    1|    axis    |      d_i_6     |    pointer   |
+|d_i_6_TREADY  | out |    1|    axis    |      d_i_6     |    pointer   |
+|d_i_7_TDATA   |  in |   16|    axis    |      d_i_7     |    pointer   |
+|d_i_7_TVALID  |  in |    1|    axis    |      d_i_7     |    pointer   |
+|d_i_7_TREADY  | out |    1|    axis    |      d_i_7     |    pointer   |
++--------------+-----+-----+------------+----------------+--------------+
+

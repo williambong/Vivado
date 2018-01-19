@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# xsim v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Aug 10 15:49:07 2015
+# Process ID: 7400
+# Log file: D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog/xsim.log
+# Journal file: D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/matrixmul/xsim_script.tcl
+# xsim {matrixmul} -maxdeltaid 10000 -autoloadwcfg -tclbatch {matrixmul.tcl}
+Vivado Simulator 2015.2
+WARNING: Your Simulation license expires in 29 day(s).
+Time resolution is 1 ps
+source matrixmul.tcl
+## run all
+$finish called at time : 340417 ps : File "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog/matrixmul.autotb.v" Line 362
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Aug 10 15:49:10 2015...

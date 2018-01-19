@@ -1,0 +1,6 @@
+lappend pragmaStatus0 {pragma "ARRAY_PARTITION" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Interface_Synthesis/lab4/axi_interfaces.c" location "axi_interfaces" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "d_o"}
+lappend pragmaStatus1 {pragma "INTERFACE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Interface_Synthesis/lab4/axi_interfaces.c" location "axi_interfaces" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus2 {pragma "ARRAY_PARTITION" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Interface_Synthesis/lab4/axi_interfaces.c" location "axi_interfaces" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "d_i"}
+lappend pragmaStatus3 {pragma "INTERFACE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Interface_Synthesis/lab4/axi_interfaces.c" location "axi_interfaces" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus4 {pragma "UNROLL" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Interface_Synthesis/lab4/axi_interfaces.c" location "axi_interfaces/For_Loop" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus5 {pragma "PIPELINE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Interface_Synthesis/lab4/axi_interfaces.c" location "axi_interfaces/For_Loop" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}

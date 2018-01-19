@@ -1,0 +1,6 @@
+dct_mac_muladd_16s_15s_32ns_32_1
+dct_dct_1d_dct_coeff_table
+dct_dct_2d_row_outbuf
+dct_dct_1d
+dct_dct_2d
+dct

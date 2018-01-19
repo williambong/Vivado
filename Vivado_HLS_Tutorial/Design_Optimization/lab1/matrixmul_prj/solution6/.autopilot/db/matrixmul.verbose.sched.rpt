@@ -1,0 +1,545 @@
+
+
+================================================================
+== Vivado HLS Report for 'matrixmul'
+================================================================
+* Date:           Mon Aug 10 15:34:07 2015
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        matrixmul_prj
+* Solution:       solution6
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  13.33|     11.13|        1.67|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    6|    6|    5|    5| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|Expression       |        -|      -|       -|       -|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       -|
+|Register         |        -|      -|       -|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+|Available        |      650|    600|  202800|  101400|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 5, depth = 7
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 7
+* Pipeline: 1
+  Pipeline-0: II = 5, D = 7, States = { 1 2 3 4 5 6 7 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+* FSM state operations: 
+
+ <State 1>: 2.39ns
+ST_1: a_addr [1/1] 0.00ns
+:6  %a_addr = getelementptr [3 x i24]* %a, i64 0, i64 0
+
+ST_1: a_load [2/2] 2.39ns
+:7  %a_load = load i24* %a_addr, align 4
+
+ST_1: b_addr [1/1] 0.00ns
+:10  %b_addr = getelementptr [3 x i24]* %b, i64 0, i64 0
+
+ST_1: b_load [2/2] 2.39ns
+:11  %b_load = load i24* %b_addr, align 4
+
+ST_1: b_addr_1 [1/1] 0.00ns
+:29  %b_addr_1 = getelementptr [3 x i24]* %b, i64 0, i64 1
+
+ST_1: b_load_1 [2/2] 2.39ns
+:30  %b_load_1 = load i24* %b_addr_1, align 4
+
+ST_1: a_addr_1 [1/1] 0.00ns
+:59  %a_addr_1 = getelementptr [3 x i24]* %a, i64 0, i64 1
+
+ST_1: a_load_1 [2/2] 2.39ns
+:60  %a_load_1 = load i24* %a_addr_1, align 4
+
+
+ <State 2>: 11.13ns
+ST_2: a_load [1/2] 2.39ns
+:7  %a_load = load i24* %a_addr, align 4
+
+ST_2: tmp_1 [1/1] 0.00ns
+:8  %tmp_1 = trunc i24 %a_load to i8
+
+ST_2: tmp_3 [1/1] 0.00ns
+:9  %tmp_3 = sext i8 %tmp_1 to i16
+
+ST_2: b_load [1/2] 2.39ns
+:11  %b_load = load i24* %b_addr, align 4
+
+ST_2: tmp_4 [1/1] 0.00ns
+:12  %tmp_4 = trunc i24 %b_load to i8
+
+ST_2: tmp_8 [1/1] 0.00ns
+:13  %tmp_8 = sext i8 %tmp_4 to i16
+
+ST_2: tmp_12 [1/1] 2.84ns
+:14  %tmp_12 = mul i16 %tmp_8, %tmp_3
+
+ST_2: tmp_6 [1/1] 0.00ns
+:15  %tmp_6 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %a_load, i32 8, i32 15)
+
+ST_2: tmp_7 [1/1] 0.00ns
+:17  %tmp_7 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %b_load, i32 8, i32 15)
+
+ST_2: tmp_9 [1/1] 0.00ns
+:20  %tmp_9 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %a_load, i32 16, i32 23)
+
+ST_2: tmp_5_0_0_2 [1/1] 0.00ns
+:21  %tmp_5_0_0_2 = sext i8 %tmp_9 to i16
+
+ST_2: tmp_s [1/1] 0.00ns
+:22  %tmp_s = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %b_load, i32 16, i32 23)
+
+ST_2: tmp_6_0_0_2 [1/1] 0.00ns
+:23  %tmp_6_0_0_2 = sext i8 %tmp_s to i16
+
+ST_2: tmp_7_0_0_2 [1/1] 5.79ns
+:24  %tmp_7_0_0_2 = mul i16 %tmp_6_0_0_2, %tmp_5_0_0_2
+
+ST_2: tmp [1/1] 2.95ns
+:25  %tmp = add i16 %tmp_7_0_0_2, %tmp_12
+
+ST_2: b_load_1 [1/2] 2.39ns
+:30  %b_load_1 = load i24* %b_addr_1, align 4
+
+ST_2: tmp_15 [1/1] 0.00ns
+:31  %tmp_15 = trunc i24 %b_load_1 to i8
+
+ST_2: tmp_6_0_1 [1/1] 0.00ns
+:32  %tmp_6_0_1 = sext i8 %tmp_15 to i16
+
+ST_2: tmp_7_0_1 [1/1] 2.84ns
+:33  %tmp_7_0_1 = mul i16 %tmp_6_0_1, %tmp_3
+
+ST_2: tmp_2 [1/1] 0.00ns
+:34  %tmp_2 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %b_load_1, i32 8, i32 15)
+
+ST_2: tmp_5 [1/1] 0.00ns
+:37  %tmp_5 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %b_load_1, i32 16, i32 23)
+
+ST_2: tmp_6_0_1_2 [1/1] 0.00ns
+:38  %tmp_6_0_1_2 = sext i8 %tmp_5 to i16
+
+ST_2: tmp_7_0_1_2 [1/1] 5.79ns
+:39  %tmp_7_0_1_2 = mul i16 %tmp_6_0_1_2, %tmp_5_0_0_2
+
+ST_2: tmp1 [1/1] 2.95ns
+:40  %tmp1 = add i16 %tmp_7_0_1_2, %tmp_7_0_1
+
+ST_2: b_addr_2 [1/1] 0.00ns
+:44  %b_addr_2 = getelementptr [3 x i24]* %b, i64 0, i64 2
+
+ST_2: b_load_2 [2/2] 2.39ns
+:45  %b_load_2 = load i24* %b_addr_2, align 4
+
+ST_2: a_load_1 [1/2] 2.39ns
+:60  %a_load_1 = load i24* %a_addr_1, align 4
+
+ST_2: tmp_19 [1/1] 0.00ns
+:61  %tmp_19 = trunc i24 %a_load_1 to i8
+
+ST_2: tmp_13 [1/1] 0.00ns
+:64  %tmp_13 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %a_load_1, i32 8, i32 15)
+
+ST_2: tmp_14 [1/1] 0.00ns
+:67  %tmp_14 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %a_load_1, i32 16, i32 23)
+
+ST_2: a_addr_2 [1/1] 0.00ns
+:88  %a_addr_2 = getelementptr [3 x i24]* %a, i64 0, i64 2
+
+ST_2: a_load_2 [2/2] 2.39ns
+:89  %a_load_2 = load i24* %a_addr_2, align 4
+
+
+ <State 3>: 11.13ns
+ST_3: res_addr [1/1] 0.00ns
+:5  %res_addr = getelementptr [9 x i16]* %res, i64 0, i64 0
+
+ST_3: tmp_5_0_0_1 [1/1] 0.00ns
+:16  %tmp_5_0_0_1 = sext i8 %tmp_6 to i16
+
+ST_3: tmp_6_0_0_1 [1/1] 0.00ns
+:18  %tmp_6_0_0_1 = sext i8 %tmp_7 to i16
+
+ST_3: tmp_7_0_0_1 [1/1] 2.84ns
+:19  %tmp_7_0_0_1 = mul i16 %tmp_6_0_0_1, %tmp_5_0_0_1
+
+ST_3: tmp_8_0_0_2 [1/1] 2.95ns
+:26  %tmp_8_0_0_2 = add i16 %tmp_7_0_0_1, %tmp
+
+ST_3: stg_53 [1/1] 2.39ns
+:27  store i16 %tmp_8_0_0_2, i16* %res_addr, align 2
+
+ST_3: res_addr_1 [1/1] 0.00ns
+:28  %res_addr_1 = getelementptr [9 x i16]* %res, i64 0, i64 1
+
+ST_3: tmp_6_0_1_1 [1/1] 0.00ns
+:35  %tmp_6_0_1_1 = sext i8 %tmp_2 to i16
+
+ST_3: tmp_7_0_1_1 [1/1] 2.84ns
+:36  %tmp_7_0_1_1 = mul i16 %tmp_6_0_1_1, %tmp_5_0_0_1
+
+ST_3: tmp_8_0_1_2 [1/1] 2.95ns
+:41  %tmp_8_0_1_2 = add i16 %tmp_7_0_1_1, %tmp1
+
+ST_3: stg_58 [1/1] 2.39ns
+:42  store i16 %tmp_8_0_1_2, i16* %res_addr_1, align 2
+
+ST_3: b_load_2 [1/2] 2.39ns
+:45  %b_load_2 = load i24* %b_addr_2, align 4
+
+ST_3: tmp_18 [1/1] 0.00ns
+:46  %tmp_18 = trunc i24 %b_load_2 to i8
+
+ST_3: tmp_6_0_2 [1/1] 0.00ns
+:47  %tmp_6_0_2 = sext i8 %tmp_18 to i16
+
+ST_3: tmp_7_0_2 [1/1] 2.84ns
+:48  %tmp_7_0_2 = mul i16 %tmp_6_0_2, %tmp_3
+
+ST_3: tmp_10 [1/1] 0.00ns
+:49  %tmp_10 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %b_load_2, i32 8, i32 15)
+
+ST_3: tmp_11 [1/1] 0.00ns
+:52  %tmp_11 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %b_load_2, i32 16, i32 23)
+
+ST_3: tmp_6_0_2_2 [1/1] 0.00ns
+:53  %tmp_6_0_2_2 = sext i8 %tmp_11 to i16
+
+ST_3: tmp_7_0_2_2 [1/1] 5.79ns
+:54  %tmp_7_0_2_2 = mul i16 %tmp_6_0_2_2, %tmp_5_0_0_2
+
+ST_3: tmp2 [1/1] 2.95ns
+:55  %tmp2 = add i16 %tmp_7_0_2_2, %tmp_7_0_2
+
+ST_3: tmp_5_1 [1/1] 0.00ns
+:62  %tmp_5_1 = sext i8 %tmp_19 to i16
+
+ST_3: tmp_7_1 [1/1] 2.84ns
+:63  %tmp_7_1 = mul i16 %tmp_8, %tmp_5_1
+
+ST_3: tmp_5_1_0_2 [1/1] 0.00ns
+:68  %tmp_5_1_0_2 = sext i8 %tmp_14 to i16
+
+ST_3: tmp_7_1_0_2 [1/1] 5.79ns
+:69  %tmp_7_1_0_2 = mul i16 %tmp_6_0_0_2, %tmp_5_1_0_2
+
+ST_3: tmp3 [1/1] 2.95ns
+:70  %tmp3 = add i16 %tmp_7_1_0_2, %tmp_7_1
+
+ST_3: a_load_2 [1/2] 2.39ns
+:89  %a_load_2 = load i24* %a_addr_2, align 4
+
+ST_3: tmp_20 [1/1] 0.00ns
+:90  %tmp_20 = trunc i24 %a_load_2 to i8
+
+ST_3: tmp_16 [1/1] 0.00ns
+:93  %tmp_16 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %a_load_2, i32 8, i32 15)
+
+ST_3: tmp_17 [1/1] 0.00ns
+:96  %tmp_17 = call i8 @_ssdm_op_PartSelect.i8.i24.i32.i32(i24 %a_load_2, i32 16, i32 23)
+
+
+ <State 4>: 8.74ns
+ST_4: res_addr_2 [1/1] 0.00ns
+:43  %res_addr_2 = getelementptr [9 x i16]* %res, i64 0, i64 2
+
+ST_4: tmp_6_0_2_1 [1/1] 0.00ns
+:50  %tmp_6_0_2_1 = sext i8 %tmp_10 to i16
+
+ST_4: tmp_7_0_2_1 [1/1] 2.84ns
+:51  %tmp_7_0_2_1 = mul i16 %tmp_6_0_2_1, %tmp_5_0_0_1
+
+ST_4: tmp_8_0_2_2 [1/1] 2.95ns
+:56  %tmp_8_0_2_2 = add i16 %tmp_7_0_2_1, %tmp2
+
+ST_4: stg_81 [1/1] 2.39ns
+:57  store i16 %tmp_8_0_2_2, i16* %res_addr_2, align 2
+
+ST_4: res_addr_3 [1/1] 0.00ns
+:58  %res_addr_3 = getelementptr [9 x i16]* %res, i64 0, i64 3
+
+ST_4: tmp_5_1_0_1 [1/1] 0.00ns
+:65  %tmp_5_1_0_1 = sext i8 %tmp_13 to i16
+
+ST_4: tmp_7_1_0_1 [1/1] 2.84ns
+:66  %tmp_7_1_0_1 = mul i16 %tmp_6_0_0_1, %tmp_5_1_0_1
+
+ST_4: tmp_8_1_0_2 [1/1] 2.95ns
+:71  %tmp_8_1_0_2 = add i16 %tmp_7_1_0_1, %tmp3
+
+ST_4: stg_86 [1/1] 2.39ns
+:72  store i16 %tmp_8_1_0_2, i16* %res_addr_3, align 2
+
+ST_4: tmp_7_1_1 [1/1] 2.84ns
+:74  %tmp_7_1_1 = mul i16 %tmp_6_0_1, %tmp_5_1
+
+ST_4: tmp_7_1_1_2 [1/1] 5.79ns
+:76  %tmp_7_1_1_2 = mul i16 %tmp_6_0_1_2, %tmp_5_1_0_2
+
+ST_4: tmp4 [1/1] 2.95ns
+:77  %tmp4 = add i16 %tmp_7_1_1_2, %tmp_7_1_1
+
+ST_4: tmp_7_1_2 [1/1] 2.84ns
+:81  %tmp_7_1_2 = mul i16 %tmp_6_0_2, %tmp_5_1
+
+ST_4: tmp_7_1_2_2 [1/1] 5.79ns
+:83  %tmp_7_1_2_2 = mul i16 %tmp_6_0_2_2, %tmp_5_1_0_2
+
+ST_4: tmp5 [1/1] 2.95ns
+:84  %tmp5 = add i16 %tmp_7_1_2_2, %tmp_7_1_2
+
+
+ <State 5>: 8.74ns
+ST_5: res_addr_4 [1/1] 0.00ns
+:73  %res_addr_4 = getelementptr [9 x i16]* %res, i64 0, i64 4
+
+ST_5: tmp_7_1_1_1 [1/1] 2.84ns
+:75  %tmp_7_1_1_1 = mul i16 %tmp_6_0_1_1, %tmp_5_1_0_1
+
+ST_5: tmp_8_1_1_2 [1/1] 2.95ns
+:78  %tmp_8_1_1_2 = add i16 %tmp_7_1_1_1, %tmp4
+
+ST_5: stg_96 [1/1] 2.39ns
+:79  store i16 %tmp_8_1_1_2, i16* %res_addr_4, align 2
+
+ST_5: res_addr_5 [1/1] 0.00ns
+:80  %res_addr_5 = getelementptr [9 x i16]* %res, i64 0, i64 5
+
+ST_5: tmp_7_1_2_1 [1/1] 2.84ns
+:82  %tmp_7_1_2_1 = mul i16 %tmp_6_0_2_1, %tmp_5_1_0_1
+
+ST_5: tmp_8_1_2_2 [1/1] 2.95ns
+:85  %tmp_8_1_2_2 = add i16 %tmp_7_1_2_1, %tmp5
+
+ST_5: stg_100 [1/1] 2.39ns
+:86  store i16 %tmp_8_1_2_2, i16* %res_addr_5, align 2
+
+ST_5: tmp_5_2 [1/1] 0.00ns
+:91  %tmp_5_2 = sext i8 %tmp_20 to i16
+
+ST_5: tmp_7_2 [1/1] 2.84ns
+:92  %tmp_7_2 = mul i16 %tmp_8, %tmp_5_2
+
+ST_5: tmp_5_2_0_2 [1/1] 0.00ns
+:97  %tmp_5_2_0_2 = sext i8 %tmp_17 to i16
+
+ST_5: tmp_7_2_0_2 [1/1] 5.79ns
+:98  %tmp_7_2_0_2 = mul i16 %tmp_6_0_0_2, %tmp_5_2_0_2
+
+ST_5: tmp6 [1/1] 2.95ns
+:99  %tmp6 = add i16 %tmp_7_2_0_2, %tmp_7_2
+
+ST_5: tmp_7_2_1 [1/1] 2.84ns
+:103  %tmp_7_2_1 = mul i16 %tmp_6_0_1, %tmp_5_2
+
+ST_5: tmp_7_2_1_2 [1/1] 5.79ns
+:105  %tmp_7_2_1_2 = mul i16 %tmp_6_0_1_2, %tmp_5_2_0_2
+
+ST_5: tmp7 [1/1] 2.95ns
+:106  %tmp7 = add i16 %tmp_7_2_1_2, %tmp_7_2_1
+
+
+ <State 6>: 8.74ns
+ST_6: res_addr_6 [1/1] 0.00ns
+:87  %res_addr_6 = getelementptr [9 x i16]* %res, i64 0, i64 6
+
+ST_6: tmp_5_2_0_1 [1/1] 0.00ns
+:94  %tmp_5_2_0_1 = sext i8 %tmp_16 to i16
+
+ST_6: tmp_7_2_0_1 [1/1] 2.84ns
+:95  %tmp_7_2_0_1 = mul i16 %tmp_6_0_0_1, %tmp_5_2_0_1
+
+ST_6: tmp_8_2_0_2 [1/1] 2.95ns
+:100  %tmp_8_2_0_2 = add i16 %tmp_7_2_0_1, %tmp6
+
+ST_6: stg_113 [1/1] 2.39ns
+:101  store i16 %tmp_8_2_0_2, i16* %res_addr_6, align 2
+
+ST_6: res_addr_7 [1/1] 0.00ns
+:102  %res_addr_7 = getelementptr [9 x i16]* %res, i64 0, i64 7
+
+ST_6: tmp_7_2_1_1 [1/1] 2.84ns
+:104  %tmp_7_2_1_1 = mul i16 %tmp_6_0_1_1, %tmp_5_2_0_1
+
+ST_6: tmp_8_2_1_2 [1/1] 2.95ns
+:107  %tmp_8_2_1_2 = add i16 %tmp_7_2_1_1, %tmp7
+
+ST_6: stg_117 [1/1] 2.39ns
+:108  store i16 %tmp_8_2_1_2, i16* %res_addr_7, align 2
+
+ST_6: tmp_7_2_2 [1/1] 2.84ns
+:110  %tmp_7_2_2 = mul i16 %tmp_6_0_2, %tmp_5_2
+
+ST_6: tmp_7_2_2_2 [1/1] 5.79ns
+:112  %tmp_7_2_2_2 = mul i16 %tmp_6_0_2_2, %tmp_5_2_0_2
+
+ST_6: tmp8 [1/1] 2.95ns
+:113  %tmp8 = add i16 %tmp_7_2_2_2, %tmp_7_2_2
+
+
+ <State 7>: 8.18ns
+ST_7: stg_121 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap([3 x i24]* %a), !map !0
+
+ST_7: stg_122 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap([3 x i24]* %b), !map !17
+
+ST_7: stg_123 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap([9 x i16]* %res), !map !30
+
+ST_7: stg_124 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @matrixmul_str) nounwind
+
+ST_7: stg_125 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind
+
+ST_7: res_addr_8 [1/1] 0.00ns
+:109  %res_addr_8 = getelementptr [9 x i16]* %res, i64 0, i64 8
+
+ST_7: tmp_7_2_2_1 [1/1] 2.84ns
+:111  %tmp_7_2_2_1 = mul i16 %tmp_6_0_2_1, %tmp_5_2_0_1
+
+ST_7: tmp_8_2_2_2 [1/1] 2.95ns
+:114  %tmp_8_2_2_2 = add i16 %tmp_7_2_2_1, %tmp8
+
+ST_7: stg_129 [1/1] 2.39ns
+:115  store i16 %tmp_8_2_2_2, i16* %res_addr_8, align 2
+
+ST_7: stg_130 [1/1] 0.00ns
+:116  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

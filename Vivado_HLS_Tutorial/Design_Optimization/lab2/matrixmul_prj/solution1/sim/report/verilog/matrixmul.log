@@ -1,0 +1,68 @@
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "C:/opt/winprog/Xilinx/Vivado_HLS/2015.2/msys/bin/g++.exe"
+   Compiling apatb_matrixmul.cpp
+   Compiling matrixmul.cpp_pre.cpp.tb.cpp
+   Compiling matrixmul_test.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-323] Starting verilog simulation. 
+@I [SIM-15] Starting XSIM ...
+@I [SIM-316] Starting C post checking ...
+Test passes.
+
+D:\opt\source\Vivado\Vivado_HLS_Tutorial\Design_Optimization\lab2\matrixmul_prj\solution1\sim\verilog>call xelab xil_defaultlib.apatb_matrixmul_top -prj matrixmul.prj --lib "ieee_proposed=./ieee_proposed" -s matrixmul  
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/opt/winprog/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrixmul_top -prj matrixmul.prj --lib ieee_proposed=./ieee_proposed -s matrixmul 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog/AESL_autofifo_a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_a
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog/AESL_autofifo_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog/AESL_autofifo_res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autofifo_res
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog/matrixmul.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrixmul_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog/matrixmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog/matrixmul_mac_muladd_8s_8s_16s_16_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_mac_muladd_8s_8s_16s_16_1_DSP48_0
+INFO: [VRFC 10-311] analyzing module matrixmul_mac_muladd_8s_8s_16s_16_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog/matrixmul_mux_3to1_sel2_8_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_mux_3to1_sel2_8_1
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrixmul_mux_3to1_sel2_8_1(ID=1...
+Compiling module xil_defaultlib.matrixmul_mac_muladd_8s_8s_16s_1...
+Compiling module xil_defaultlib.matrixmul_mac_muladd_8s_8s_16s_1...
+Compiling module xil_defaultlib.matrixmul
+Compiling module xil_defaultlib.AESL_autofifo_a
+Compiling module xil_defaultlib.AESL_autofifo_b
+Compiling module xil_defaultlib.AESL_autofifo_res
+Compiling module xil_defaultlib.apatb_matrixmul_top
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot matrixmul
+
+****** xsim v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/matrixmul/xsim_script.tcl
+# xsim {matrixmul} -maxdeltaid 10000 -autoloadwcfg -tclbatch {matrixmul.tcl}
+Vivado Simulator 2015.2
+WARNING: Your Simulation license expires in 29 day(s).
+Time resolution is 1 ps
+source matrixmul.tcl
+## run all
+$finish called at time : 340417 ps : File "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab2/matrixmul_prj/solution1/sim/verilog/matrixmul.autotb.v" Line 362
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Aug 10 15:49:10 2015...
+Test passes.
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***

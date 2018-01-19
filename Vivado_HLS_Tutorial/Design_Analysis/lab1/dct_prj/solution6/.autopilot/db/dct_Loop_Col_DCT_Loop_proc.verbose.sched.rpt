@@ -1,0 +1,512 @@
+
+
+================================================================
+== Vivado HLS Report for 'dct_Loop_Col_DCT_Loop_proc'
+================================================================
+* Date:           Mon Aug 10 14:23:07 2015
+
+* Version:        2015.2 (Build 1266856 on Fri Jun 26 16:57:37 PM 2015)
+* Project:        dct_prj
+* Solution:       solution6
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   8.00|      8.93|        1.00|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   69|   69|   69|   69|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                               |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |           Loop Name           | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Col_DCT_Loop_DCT_Outer_Loop  |   67|   67|         5|          1|          1|    64|    yes   |
+        +-------------------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|Expression       |        -|      -|       -|       -|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       -|
+|Register         |        -|      -|       -|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+|Available        |      650|    600|  202800|  101400|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 5
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 7
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 5, States = { 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	7  / (exitcond_flatten)
+	3  / (!exitcond_flatten)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	2  / true
+7 --> 
+* FSM state operations: 
+
+ <State 1>: 1.09ns
+ST_1: stg_8 [1/1] 1.09ns
+newFuncRoot:0  br label %0
+
+
+ <State 2>: 4.46ns
+ST_2: indvar_flatten [1/1] 0.00ns
+:0  %indvar_flatten = phi i7 [ 0, %newFuncRoot ], [ %indvar_flatten_next, %dct_1d.exit ]
+
+ST_2: i_2_i [1/1] 0.00ns
+:1  %i_2_i = phi i4 [ 0, %newFuncRoot ], [ %i_2_i_mid2, %dct_1d.exit ]
+
+ST_2: k_i [1/1] 0.00ns
+:2  %k_i = phi i4 [ 0, %newFuncRoot ], [ %k, %dct_1d.exit ]
+
+ST_2: exitcond_flatten [1/1] 1.35ns
+:3  %exitcond_flatten = icmp eq i7 %indvar_flatten, -64
+
+ST_2: indvar_flatten_next [1/1] 1.34ns
+:4  %indvar_flatten_next = add i7 %indvar_flatten, 1
+
+ST_2: stg_14 [1/1] 0.00ns
+:5  br i1 %exitcond_flatten, label %.preheader.i.exitStub, label %dct_1d.exit
+
+ST_2: exitcond1_i4 [1/1] 1.24ns
+dct_1d.exit:2  %exitcond1_i4 = icmp eq i4 %k_i, -8
+
+ST_2: k_i_mid2 [1/1] 0.84ns
+dct_1d.exit:3  %k_i_mid2 = select i1 %exitcond1_i4, i4 0, i4 %k_i
+
+ST_2: i2 [1/1] 0.48ns
+dct_1d.exit:4  %i2 = add i4 %i_2_i, 1
+
+ST_2: i_2_i_mid2 [1/1] 0.84ns
+dct_1d.exit:5  %i_2_i_mid2 = select i1 %exitcond1_i4, i4 %i2, i4 %i_2_i
+
+ST_2: tmp_71_cast_i [1/1] 0.00ns
+dct_1d.exit:6  %tmp_71_cast_i = zext i4 %i_2_i_mid2 to i64
+
+ST_2: tmp_i_10 [1/1] 0.00ns
+dct_1d.exit:10  %tmp_i_10 = zext i4 %k_i_mid2 to i64
+
+ST_2: dct_coeff_table_0_addr [1/1] 0.00ns
+dct_1d.exit:11  %dct_coeff_table_0_addr = getelementptr [8 x i14]* @dct_coeff_table_0, i64 0, i64 %tmp_i_10
+
+ST_2: dct_coeff_table_0_load [2/2] 2.39ns
+dct_1d.exit:12  %dct_coeff_table_0_load = load i14* %dct_coeff_table_0_addr, align 2
+
+ST_2: col_inbuf_0_addr [1/1] 0.00ns
+dct_1d.exit:14  %col_inbuf_0_addr = getelementptr [8 x i16]* %col_inbuf_0, i64 0, i64 %tmp_71_cast_i
+
+ST_2: col_inbuf_0_load [2/2] 2.39ns
+dct_1d.exit:15  %col_inbuf_0_load = load i16* %col_inbuf_0_addr, align 2
+
+ST_2: dct_coeff_table_1_addr [1/1] 0.00ns
+dct_1d.exit:18  %dct_coeff_table_1_addr = getelementptr [8 x i15]* @dct_coeff_table_1, i64 0, i64 %tmp_i_10
+
+ST_2: dct_coeff_table_1_load [2/2] 2.39ns
+dct_1d.exit:19  %dct_coeff_table_1_load = load i15* %dct_coeff_table_1_addr, align 2
+
+ST_2: col_inbuf_1_addr [1/1] 0.00ns
+dct_1d.exit:21  %col_inbuf_1_addr = getelementptr [8 x i16]* %col_inbuf_1, i64 0, i64 %tmp_71_cast_i
+
+ST_2: col_inbuf_1_load [2/2] 2.39ns
+dct_1d.exit:22  %col_inbuf_1_load = load i16* %col_inbuf_1_addr, align 2
+
+ST_2: dct_coeff_table_2_addr [1/1] 0.00ns
+dct_1d.exit:25  %dct_coeff_table_2_addr = getelementptr [8 x i15]* @dct_coeff_table_2, i64 0, i64 %tmp_i_10
+
+ST_2: dct_coeff_table_2_load [2/2] 2.39ns
+dct_1d.exit:26  %dct_coeff_table_2_load = load i15* %dct_coeff_table_2_addr, align 2
+
+ST_2: col_inbuf_2_addr [1/1] 0.00ns
+dct_1d.exit:28  %col_inbuf_2_addr = getelementptr [8 x i16]* %col_inbuf_2, i64 0, i64 %tmp_71_cast_i
+
+ST_2: col_inbuf_2_load [2/2] 2.39ns
+dct_1d.exit:29  %col_inbuf_2_load = load i16* %col_inbuf_2_addr, align 2
+
+ST_2: dct_coeff_table_3_addr [1/1] 0.00ns
+dct_1d.exit:32  %dct_coeff_table_3_addr = getelementptr [8 x i15]* @dct_coeff_table_3, i64 0, i64 %tmp_i_10
+
+ST_2: dct_coeff_table_3_load [2/2] 2.39ns
+dct_1d.exit:33  %dct_coeff_table_3_load = load i15* %dct_coeff_table_3_addr, align 2
+
+ST_2: col_inbuf_3_addr [1/1] 0.00ns
+dct_1d.exit:35  %col_inbuf_3_addr = getelementptr [8 x i16]* %col_inbuf_3, i64 0, i64 %tmp_71_cast_i
+
+ST_2: col_inbuf_3_load [2/2] 2.39ns
+dct_1d.exit:36  %col_inbuf_3_load = load i16* %col_inbuf_3_addr, align 2
+
+ST_2: dct_coeff_table_4_addr [1/1] 0.00ns
+dct_1d.exit:39  %dct_coeff_table_4_addr = getelementptr [8 x i15]* @dct_coeff_table_4, i64 0, i64 %tmp_i_10
+
+ST_2: dct_coeff_table_4_load [2/2] 2.39ns
+dct_1d.exit:40  %dct_coeff_table_4_load = load i15* %dct_coeff_table_4_addr, align 2
+
+ST_2: col_inbuf_4_addr [1/1] 0.00ns
+dct_1d.exit:42  %col_inbuf_4_addr = getelementptr [8 x i16]* %col_inbuf_4, i64 0, i64 %tmp_71_cast_i
+
+ST_2: col_inbuf_4_load [2/2] 2.39ns
+dct_1d.exit:43  %col_inbuf_4_load = load i16* %col_inbuf_4_addr, align 2
+
+ST_2: dct_coeff_table_5_addr [1/1] 0.00ns
+dct_1d.exit:46  %dct_coeff_table_5_addr = getelementptr [8 x i15]* @dct_coeff_table_5, i64 0, i64 %tmp_i_10
+
+ST_2: dct_coeff_table_5_load [2/2] 2.39ns
+dct_1d.exit:47  %dct_coeff_table_5_load = load i15* %dct_coeff_table_5_addr, align 2
+
+ST_2: col_inbuf_5_addr [1/1] 0.00ns
+dct_1d.exit:49  %col_inbuf_5_addr = getelementptr [8 x i16]* %col_inbuf_5, i64 0, i64 %tmp_71_cast_i
+
+ST_2: col_inbuf_5_load [2/2] 2.39ns
+dct_1d.exit:50  %col_inbuf_5_load = load i16* %col_inbuf_5_addr, align 2
+
+ST_2: dct_coeff_table_6_addr [1/1] 0.00ns
+dct_1d.exit:53  %dct_coeff_table_6_addr = getelementptr [8 x i15]* @dct_coeff_table_6, i64 0, i64 %tmp_i_10
+
+ST_2: dct_coeff_table_6_load [2/2] 2.39ns
+dct_1d.exit:54  %dct_coeff_table_6_load = load i15* %dct_coeff_table_6_addr, align 2
+
+ST_2: col_inbuf_6_addr [1/1] 0.00ns
+dct_1d.exit:56  %col_inbuf_6_addr = getelementptr [8 x i16]* %col_inbuf_6, i64 0, i64 %tmp_71_cast_i
+
+ST_2: col_inbuf_6_load [2/2] 2.39ns
+dct_1d.exit:57  %col_inbuf_6_load = load i16* %col_inbuf_6_addr, align 2
+
+ST_2: dct_coeff_table_7_addr [1/1] 0.00ns
+dct_1d.exit:60  %dct_coeff_table_7_addr = getelementptr [8 x i15]* @dct_coeff_table_7, i64 0, i64 %tmp_i_10
+
+ST_2: dct_coeff_table_7_load [2/2] 2.39ns
+dct_1d.exit:61  %dct_coeff_table_7_load = load i15* %dct_coeff_table_7_addr, align 2
+
+ST_2: col_inbuf_7_addr [1/1] 0.00ns
+dct_1d.exit:63  %col_inbuf_7_addr = getelementptr [8 x i16]* %col_inbuf_7, i64 0, i64 %tmp_71_cast_i
+
+ST_2: col_inbuf_7_load [2/2] 2.39ns
+dct_1d.exit:64  %col_inbuf_7_load = load i16* %col_inbuf_7_addr, align 2
+
+ST_2: k [1/1] 0.48ns
+dct_1d.exit:84  %k = add i4 %k_i_mid2, 1
+
+
+ <State 3>: 2.39ns
+ST_3: dct_coeff_table_0_load [1/2] 2.39ns
+dct_1d.exit:12  %dct_coeff_table_0_load = load i14* %dct_coeff_table_0_addr, align 2
+
+ST_3: col_inbuf_0_load [1/2] 2.39ns
+dct_1d.exit:15  %col_inbuf_0_load = load i16* %col_inbuf_0_addr, align 2
+
+ST_3: dct_coeff_table_1_load [1/2] 2.39ns
+dct_1d.exit:19  %dct_coeff_table_1_load = load i15* %dct_coeff_table_1_addr, align 2
+
+ST_3: col_inbuf_1_load [1/2] 2.39ns
+dct_1d.exit:22  %col_inbuf_1_load = load i16* %col_inbuf_1_addr, align 2
+
+ST_3: dct_coeff_table_2_load [1/2] 2.39ns
+dct_1d.exit:26  %dct_coeff_table_2_load = load i15* %dct_coeff_table_2_addr, align 2
+
+ST_3: col_inbuf_2_load [1/2] 2.39ns
+dct_1d.exit:29  %col_inbuf_2_load = load i16* %col_inbuf_2_addr, align 2
+
+ST_3: dct_coeff_table_3_load [1/2] 2.39ns
+dct_1d.exit:33  %dct_coeff_table_3_load = load i15* %dct_coeff_table_3_addr, align 2
+
+ST_3: col_inbuf_3_load [1/2] 2.39ns
+dct_1d.exit:36  %col_inbuf_3_load = load i16* %col_inbuf_3_addr, align 2
+
+ST_3: dct_coeff_table_4_load [1/2] 2.39ns
+dct_1d.exit:40  %dct_coeff_table_4_load = load i15* %dct_coeff_table_4_addr, align 2
+
+ST_3: col_inbuf_4_load [1/2] 2.39ns
+dct_1d.exit:43  %col_inbuf_4_load = load i16* %col_inbuf_4_addr, align 2
+
+ST_3: dct_coeff_table_5_load [1/2] 2.39ns
+dct_1d.exit:47  %dct_coeff_table_5_load = load i15* %dct_coeff_table_5_addr, align 2
+
+ST_3: col_inbuf_5_load [1/2] 2.39ns
+dct_1d.exit:50  %col_inbuf_5_load = load i16* %col_inbuf_5_addr, align 2
+
+ST_3: dct_coeff_table_6_load [1/2] 2.39ns
+dct_1d.exit:54  %dct_coeff_table_6_load = load i15* %dct_coeff_table_6_addr, align 2
+
+ST_3: col_inbuf_6_load [1/2] 2.39ns
+dct_1d.exit:57  %col_inbuf_6_load = load i16* %col_inbuf_6_addr, align 2
+
+ST_3: dct_coeff_table_7_load [1/2] 2.39ns
+dct_1d.exit:61  %dct_coeff_table_7_load = load i15* %dct_coeff_table_7_addr, align 2
+
+ST_3: col_inbuf_7_load [1/2] 2.39ns
+dct_1d.exit:64  %col_inbuf_7_load = load i16* %col_inbuf_7_addr, align 2
+
+
+ <State 4>: 8.74ns
+ST_4: coeff_cast_i [1/1] 0.00ns
+dct_1d.exit:13  %coeff_cast_i = zext i14 %dct_coeff_table_0_load to i29
+
+ST_4: tmp_72_cast_i [1/1] 0.00ns
+dct_1d.exit:16  %tmp_72_cast_i = sext i16 %col_inbuf_0_load to i29
+
+ST_4: tmp_8_i [1/1] 5.79ns
+dct_1d.exit:17  %tmp_8_i = mul i29 %tmp_72_cast_i, %coeff_cast_i
+
+ST_4: coeff_2_cast_i [1/1] 0.00ns
+dct_1d.exit:27  %coeff_2_cast_i = sext i15 %dct_coeff_table_2_load to i29
+
+ST_4: tmp_72_2_cast_i [1/1] 0.00ns
+dct_1d.exit:30  %tmp_72_2_cast_i = sext i16 %col_inbuf_2_load to i29
+
+ST_4: tmp_8_2_i [1/1] 5.79ns
+dct_1d.exit:31  %tmp_8_2_i = mul i29 %tmp_72_2_cast_i, %coeff_2_cast_i
+
+ST_4: coeff_4_cast_i [1/1] 0.00ns
+dct_1d.exit:41  %coeff_4_cast_i = sext i15 %dct_coeff_table_4_load to i29
+
+ST_4: tmp_72_4_cast_i [1/1] 0.00ns
+dct_1d.exit:44  %tmp_72_4_cast_i = sext i16 %col_inbuf_4_load to i29
+
+ST_4: tmp_8_4_i [1/1] 5.79ns
+dct_1d.exit:45  %tmp_8_4_i = mul i29 %tmp_72_4_cast_i, %coeff_4_cast_i
+
+ST_4: coeff_6_cast_i [1/1] 0.00ns
+dct_1d.exit:55  %coeff_6_cast_i = sext i15 %dct_coeff_table_6_load to i29
+
+ST_4: tmp_72_6_cast_i [1/1] 0.00ns
+dct_1d.exit:58  %tmp_72_6_cast_i = sext i16 %col_inbuf_6_load to i29
+
+ST_4: tmp_8_6_i [1/1] 2.84ns
+dct_1d.exit:59  %tmp_8_6_i = mul i29 %tmp_72_6_cast_i, %coeff_6_cast_i
+
+ST_4: coeff_7_cast_i [1/1] 0.00ns
+dct_1d.exit:62  %coeff_7_cast_i = sext i15 %dct_coeff_table_7_load to i29
+
+ST_4: tmp_72_7_cast_i [1/1] 0.00ns
+dct_1d.exit:65  %tmp_72_7_cast_i = sext i16 %col_inbuf_7_load to i29
+
+ST_4: tmp_8_7_i [1/1] 2.84ns
+dct_1d.exit:66  %tmp_8_7_i = mul i29 %tmp_72_7_cast_i, %coeff_7_cast_i
+
+ST_4: tmp6 [1/1] 2.95ns
+dct_1d.exit:71  %tmp6 = add i29 %tmp_8_7_i, 4096
+
+ST_4: tmp5 [1/1] 2.95ns
+dct_1d.exit:72  %tmp5 = add i29 %tmp6, %tmp_8_6_i
+
+
+ <State 5>: 8.93ns
+ST_5: coeff_1_cast_i [1/1] 0.00ns
+dct_1d.exit:20  %coeff_1_cast_i = sext i15 %dct_coeff_table_1_load to i29
+
+ST_5: tmp_72_1_cast_i [1/1] 0.00ns
+dct_1d.exit:23  %tmp_72_1_cast_i = sext i16 %col_inbuf_1_load to i29
+
+ST_5: tmp_8_1_i [1/1] 2.84ns
+dct_1d.exit:24  %tmp_8_1_i = mul i29 %tmp_72_1_cast_i, %coeff_1_cast_i
+
+ST_5: coeff_3_cast_i [1/1] 0.00ns
+dct_1d.exit:34  %coeff_3_cast_i = sext i15 %dct_coeff_table_3_load to i29
+
+ST_5: tmp_72_3_cast_i [1/1] 0.00ns
+dct_1d.exit:37  %tmp_72_3_cast_i = sext i16 %col_inbuf_3_load to i29
+
+ST_5: tmp_8_3_i [1/1] 2.84ns
+dct_1d.exit:38  %tmp_8_3_i = mul i29 %tmp_72_3_cast_i, %coeff_3_cast_i
+
+ST_5: coeff_5_cast_i [1/1] 0.00ns
+dct_1d.exit:48  %coeff_5_cast_i = sext i15 %dct_coeff_table_5_load to i29
+
+ST_5: tmp_72_5_cast_i [1/1] 0.00ns
+dct_1d.exit:51  %tmp_72_5_cast_i = sext i16 %col_inbuf_5_load to i29
+
+ST_5: tmp_8_5_i [1/1] 2.84ns
+dct_1d.exit:52  %tmp_8_5_i = mul i29 %tmp_72_5_cast_i, %coeff_5_cast_i
+
+ST_5: tmp1 [1/1] 2.95ns
+dct_1d.exit:67  %tmp1 = add i29 %tmp_8_i, %tmp_8_1_i
+
+ST_5: tmp2 [1/1] 2.95ns
+dct_1d.exit:68  %tmp2 = add i29 %tmp_8_2_i, %tmp_8_3_i
+
+ST_5: tmp [1/1] 1.44ns
+dct_1d.exit:69  %tmp = add i29 %tmp2, %tmp1
+
+ST_5: tmp4 [1/1] 2.95ns
+dct_1d.exit:70  %tmp4 = add i29 %tmp_8_4_i, %tmp_8_5_i
+
+ST_5: tmp3 [1/1] 1.70ns
+dct_1d.exit:73  %tmp3 = add i29 %tmp5, %tmp4
+
+ST_5: tmp_2_i [1/1] 1.44ns
+dct_1d.exit:74  %tmp_2_i = add i29 %tmp3, %tmp
+
+ST_5: tmp_4_i [1/1] 0.00ns
+dct_1d.exit:75  %tmp_4_i = call i16 @_ssdm_op_PartSelect.i16.i29.i32.i32(i29 %tmp_2_i, i32 13, i32 28)
+
+
+ <State 6>: 3.67ns
+ST_6: stg_103 [1/1] 0.00ns
+dct_1d.exit:0  call void (...)* @_ssdm_op_SpecLoopName([28 x i8]* @Col_DCT_Loop_DCT_Outer_Loop_st)
+
+ST_6: empty [1/1] 0.00ns
+dct_1d.exit:1  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 64, i64 64, i64 64) nounwind
+
+ST_6: stg_105 [1/1] 0.00ns
+dct_1d.exit:7  call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str) nounwind
+
+ST_6: tmp_i [1/1] 0.00ns
+dct_1d.exit:8  %tmp_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str) nounwind
+
+ST_6: stg_107 [1/1] 0.00ns
+dct_1d.exit:9  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_6: tmp_i_trn_cast [1/1] 0.00ns
+dct_1d.exit:76  %tmp_i_trn_cast = zext i4 %k_i_mid2 to i8
+
+ST_6: tmp_8 [1/1] 0.00ns
+dct_1d.exit:77  %tmp_8 = call i7 @_ssdm_op_BitConcatenate.i7.i4.i3(i4 %i_2_i_mid2, i3 0)
+
+ST_6: p_addr_cast [1/1] 0.00ns
+dct_1d.exit:78  %p_addr_cast = zext i7 %tmp_8 to i8
+
+ST_6: p_addr1 [1/1] 1.34ns
+dct_1d.exit:79  %p_addr1 = add i8 %tmp_i_trn_cast, %p_addr_cast
+
+ST_6: tmp_9 [1/1] 0.00ns
+dct_1d.exit:80  %tmp_9 = zext i8 %p_addr1 to i64
+
+ST_6: col_outbuf_i_addr [1/1] 0.00ns
+dct_1d.exit:81  %col_outbuf_i_addr = getelementptr [64 x i16]* %col_outbuf_i, i64 0, i64 %tmp_9
+
+ST_6: stg_114 [1/1] 2.33ns
+dct_1d.exit:82  store i16 %tmp_4_i, i16* %col_outbuf_i_addr, align 2
+
+ST_6: empty_11 [1/1] 0.00ns
+dct_1d.exit:83  %empty_11 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str, i32 %tmp_i) nounwind
+
+ST_6: stg_116 [1/1] 0.00ns
+dct_1d.exit:85  br label %0
+
+
+ <State 7>: 0.00ns
+ST_7: stg_117 [1/1] 0.00ns
+.preheader.i.exitStub:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

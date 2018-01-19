@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# xsim v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Aug 08 00:22:21 2015
+# Process ID: 480
+# Log file: D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab1/fir_prj/solution1/sim/verilog/xsim.log
+# Journal file: D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab1/fir_prj/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/fir/xsim_script.tcl
+# xsim {fir} -maxdeltaid 10000 -autoloadwcfg -tclbatch {fir.tcl}
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source fir.tcl
+## run all
+$finish called at time : 541045400 ps : File "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Introduction/lab1/fir_prj/solution1/sim/verilog/fir.autotb.v" Line 354
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Aug 08 00:22:25 2015...

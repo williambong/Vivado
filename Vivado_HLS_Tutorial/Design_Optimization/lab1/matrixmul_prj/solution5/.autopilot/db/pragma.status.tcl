@@ -1,0 +1,6 @@
+lappend pragmaStatus0 {pragma "PIPELINE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul.cpp" location "matrixmul/Col" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus1 {pragma "ARRAY_RESHAPE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul.cpp" location "matrixmul" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "a"}
+lappend pragmaStatus2 {pragma "ARRAY_RESHAPE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul.cpp" location "matrixmul" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "b"}
+lappend pragmaStatus3 {pragma "INTERFACE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul.cpp" location "matrixmul" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus4 {pragma "INTERFACE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul.cpp" location "matrixmul" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus5 {pragma "INTERFACE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul.cpp" location "matrixmul" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}

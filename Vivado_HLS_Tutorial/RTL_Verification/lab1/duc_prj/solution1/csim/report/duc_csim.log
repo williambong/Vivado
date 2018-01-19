@@ -1,0 +1,77 @@
+   Compiling(apcc) ../../../../duc_test.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 01:00:20 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab1/duc_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling(apcc) ../../../../mac.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 01:00:26 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab1/duc_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling(apcc) ../../../../dds.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 01:00:31 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab1/duc_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling(apcc) ../../../../mixer.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 01:00:36 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab1/duc_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling(apcc) ../../../../imf3.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 01:00:42 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab1/duc_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling(apcc) ../../../../imf2.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 01:00:47 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab1/duc_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling(apcc) ../../../../imf1.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 01:00:53 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab1/duc_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling(apcc) ../../../../srrc.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 01:00:58 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab1/duc_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling(apcc) ../../../../duc.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 01:01:04 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/RTL_Verification/lab1/duc_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Generating csim.exe
+
+ *** DUC hardware test PASSED ! *** 
+
+@I [SIM-1] CSim done with 0 errors.

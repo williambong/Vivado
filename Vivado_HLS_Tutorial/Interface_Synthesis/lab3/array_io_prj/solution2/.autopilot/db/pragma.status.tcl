@@ -1,0 +1,3 @@
+lappend pragmaStatus0 {pragma "UNROLL" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Interface_Synthesis/lab3/array_io.c" location "array_io/For_Loop" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus1 {pragma "RESOURCE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Interface_Synthesis/lab3/array_io.c" location "array_io" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "d_i"}
+lappend pragmaStatus2 {pragma "INTERFACE" source "D:/opt/source/Vivado/Vivado_HLS_Tutorial/Interface_Synthesis/lab3/array_io.c" location "array_io" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}

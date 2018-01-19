@@ -1,0 +1,8 @@
+verilog xil_defaultlib "AESL_autofifo_a.v"
+verilog xil_defaultlib "AESL_autofifo_b.v"
+verilog xil_defaultlib "AESL_autofifo_res.v"
+verilog xil_defaultlib "matrixmul.autotb.v"
+verilog xil_defaultlib "matrixmul.v"
+verilog xil_defaultlib "matrixmul_mac_muladd_8s_8s_16s_16_1.v"
+verilog xil_defaultlib "matrixmul_mux_3to1_sel2_8_1.v"
+

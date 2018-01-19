@@ -1,0 +1,58 @@
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'C:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Mon Aug 10 15:33:58 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab1'
+@I [HLS-10] Opening project 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj'.
+@I [HLS-10] Adding design file 'matrixmul.cpp' to the project
+@I [HLS-10] Adding test bench file 'matrixmul_test.cpp' to the project
+@I [HLS-10] Opening solution 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/Design_Optimization/lab1/matrixmul_prj/solution6'.
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Setting target device to 'xc7k160tfbg484-1'
+@I [SYN-201] Setting up clock 'default' with a period of 13.3333ns.
+@I [HLS-10] Analyzing design file 'matrixmul.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-502] Unrolling all loops for pipelining in function 'matrixmul' (matrixmul.cpp:49).
+@I [XFORM-501] Unrolling loop 'Row' (matrixmul.cpp:54) in function 'matrixmul' completely.
+@I [XFORM-501] Unrolling loop 'Col' (matrixmul.cpp:56) in function 'matrixmul' completely.
+@I [XFORM-501] Unrolling loop 'Product' (matrixmul.cpp:59) in function 'matrixmul' completely.
+@I [XFORM-131] Reshaping array 'b' (matrixmul.cpp:50) in dimension 1 completely.
+@I [XFORM-131] Reshaping array 'a' (matrixmul.cpp:49) in dimension 2 completely.
+@I [HLS-111] Elapsed time: 10.255 seconds; current memory usage: 69.9 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'matrixmul' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'matrixmul' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function 'matrixmul'.
+@W [SCHED-69] Unable to schedule 'load' operation ('b_load_2', matrixmul.cpp:60) on array 'b' due to limited memory ports.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 5, Depth: 7.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.23 seconds; current memory usage: 71.8 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'matrixmul' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.118 seconds; current memory usage: 71.9 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'matrixmul' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'matrixmul/a' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'matrixmul/b' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'matrixmul/res' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on function 'matrixmul' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Generating core module 'matrixmul_mac_muladd_8s_8s_16s_16_1': 18 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'matrixmul'.
+@I [HLS-111] Elapsed time: 0.133 seconds; current memory usage: 71.7 MB.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'matrixmul'.
+@I [WVHDL-304] Generating RTL VHDL for 'matrixmul'.
+@I [WVLOG-307] Generating RTL Verilog for 'matrixmul'.
+@I [HLS-112] Total elapsed time: 11.801 seconds; peak memory usage: 71.9 MB.
+@I [LIC-101] Checked in feature [HLS]

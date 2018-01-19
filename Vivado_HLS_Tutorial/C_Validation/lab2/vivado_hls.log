@@ -1,0 +1,329 @@
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'C:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Sat Aug 08 14:07:23 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/C_Validation/lab2'
+@I [HLS-10] Opening project 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window_prj'.
+@I [HLS-10] Opening solution 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window_prj/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 5ns.
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Setting target device to 'xc7k160tfbg484-1'
+   Compiling(apcc) ../../../../hamming_window_test.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Sat Aug 08 14:07:27 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window_prj/solution1/csim/build'
+../../../../hamming_window_test.c:77:18: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+          fprintf(fp, "%d %d \n", hw_result[i],sw_result[i]);
+                       ~^         ~~~~~~~~~~~~
+../../../../hamming_window_test.c:77:21: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+          fprintf(fp, "%d %d \n", hw_result[i],sw_result[i]);
+                          ~^                   ~~~~~~~~~~~~
+../../../../hamming_window_test.c:78:41: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+          printf("DUT results: Sample=%d, DUT=%d, Expected=%d\n", i, hw_result[i],sw_result[i]);
+                                              ~^                     ~~~~~~~~~~~~
+../../../../hamming_window_test.c:78:54: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+          printf("DUT results: Sample=%d, DUT=%d, Expected=%d\n", i, hw_result[i],sw_result[i]);
+                                                           ~^                     ~~~~~~~~~~~~
+../../../../hamming_window_test.c:82:56: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+         printf("\n!!! ERROR at i = %4d - expected: %10d\tgot: %10d",
+                                                    ~~~^
+../../../../hamming_window_test.c:82:67: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+         printf("\n!!! ERROR at i = %4d - expected: %10d\tgot: %10d",
+                                                               ~~~^
+6 warnings generated.
+../../../../hamming_window_test.c:77:18: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+          fprintf(fp, "%d %d \n", hw_result[i],sw_result[i]);
+                       ~^         ~~~~~~~~~~~~
+../../../../hamming_window_test.c:77:21: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+          fprintf(fp, "%d %d \n", hw_result[i],sw_result[i]);
+                          ~^                   ~~~~~~~~~~~~
+../../../../hamming_window_test.c:78:41: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+          printf("DUT results: Sample=%d, DUT=%d, Expected=%d\n", i, hw_result[i],sw_result[i]);
+                                              ~^                     ~~~~~~~~~~~~
+../../../../hamming_window_test.c:78:54: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+          printf("DUT results: Sample=%d, DUT=%d, Expected=%d\n", i, hw_result[i],sw_result[i]);
+                                                           ~^                     ~~~~~~~~~~~~
+../../../../hamming_window_test.c:82:56: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+         printf("\n!!! ERROR at i = %4d - expected: %10d\tgot: %10d",
+                                                    ~~~^
+../../../../hamming_window_test.c:82:67: warning: format specifies type 'int' but the argument has type 'out_data_t' (aka 'int32') [-Wformat]
+         printf("\n!!! ERROR at i = %4d - expected: %10d\tgot: %10d",
+                                                               ~~~^
+6 warnings generated.
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Compiling(apcc) ../../../../hamming_window.c in debug mode
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running 'c:/opt/winprog/Xilinx/Vivado_HLS/2015.2/bin/unwrapped/win64.o/apcc.exe'
+            for user 'William' on host 'nalu' (Windows NT_amd64 version 6.2) on Sat Aug 08 14:07:32 +0800 2015
+            in directory 'D:/opt/source/Vivado/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window_prj/solution1/csim/build'
+@I [APCC-3] Tmp directory is apcc_db
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [HLS]
+   Generating csim.exe
+Running DUT...done.
+Testing DUT resultsDUT results: Sample=0, DUT=-42923460, Expected=-42923460
+
+.DUT results: Sample=1, DUT=-37643710, Expected=-37643710
+.DUT results: Sample=2, DUT=-32413106, Expected=-32413106
+.DUT results: Sample=3, DUT=-27256218, Expected=-27256218
+.DUT results: Sample=4, DUT=-22067901, Expected=-22067901
+.DUT results: Sample=5, DUT=-16796329, Expected=-16796329
+.DUT results: Sample=6, DUT=-11401872, Expected=-11401872
+.DUT results: Sample=7, DUT=-5823090, Expected=-5823090
+.DUT results: Sample=8, DUT=0, Expected=0
+.DUT results: Sample=9, DUT=6123520, Expected=6123520
+.DUT results: Sample=10, DUT=12599296, Expected=12599296
+.DUT results: Sample=11, DUT=19476480, Expected=19476480
+.DUT results: Sample=12, DUT=26820608, Expected=26820608
+.DUT results: Sample=13, DUT=34691426, Expected=34691426
+.DUT results: Sample=14, DUT=43104550, Expected=43104550
+.DUT results: Sample=15, DUT=52152549, Expected=52152549
+.DUT results: Sample=16, DUT=-61862208, Expected=-61862208
+.DUT results: Sample=17, DUT=-56250540, Expected=-56250540
+.DUT results: Sample=18, DUT=-50106386, Expected=-50106386
+.DUT results: Sample=19, DUT=-43433838, Expected=-43433838
+.DUT results: Sample=20, DUT=-36157281, Expected=-36157281
+.DUT results: Sample=21, DUT=-28223239, Expected=-28223239
+.DUT results: Sample=22, DUT=-19584681, Expected=-19584681
+.DUT results: Sample=23, DUT=-10188360, Expected=-10188360
+.DUT results: Sample=24, DUT=0, Expected=0
+.DUT results: Sample=25, DUT=11038720, Expected=11038720
+.DUT results: Sample=26, DUT=22978560, Expected=22978560
+.DUT results: Sample=27, DUT=35844096, Expected=35844096
+.DUT results: Sample=28, DUT=49709056, Expected=49709056
+.DUT results: Sample=29, DUT=64590766, Expected=64590766
+.DUT results: Sample=30, DUT=80532275, Expected=80532275
+.DUT results: Sample=31, DUT=97596084, Expected=97596084
+.DUT results: Sample=32, DUT=-115795044, Expected=-115795044
+.DUT results: Sample=33, DUT=-105132890, Expected=-105132890
+.DUT results: Sample=34, DUT=-93479496, Expected=-93479496
+.DUT results: Sample=35, DUT=-80744754, Expected=-80744754
+.DUT results: Sample=36, DUT=-66940938, Expected=-66940938
+.DUT results: Sample=37, DUT=-51986297, Expected=-51986297
+.DUT results: Sample=38, DUT=-35868389, Expected=-35868389
+.DUT results: Sample=39, DUT=-18550350, Expected=-18550350
+.DUT results: Sample=40, DUT=0, Expected=0
+.DUT results: Sample=41, DUT=19824640, Expected=19824640
+.DUT results: Sample=42, DUT=40943616, Expected=40943616
+.DUT results: Sample=43, DUT=63393792, Expected=63393792
+.DUT results: Sample=44, DUT=87195648, Expected=87195648
+.DUT results: Sample=45, DUT=112368273, Expected=112368273
+.DUT results: Sample=46, DUT=138971625, Expected=138971625
+.DUT results: Sample=47, DUT=166979904, Expected=166979904
+.DUT results: Sample=48, DUT=-196432170, Expected=-196432170
+.DUT results: Sample=49, DUT=-176836560, Expected=-176836560
+.DUT results: Sample=50, DUT=-155848308, Expected=-155848308
+.DUT results: Sample=51, DUT=-133475604, Expected=-133475604
+.DUT results: Sample=52, DUT=-109684185, Expected=-109684185
+.DUT results: Sample=53, DUT=-84460838, Expected=-84460838
+.DUT results: Sample=54, DUT=-57779314, Expected=-57779314
+.DUT results: Sample=55, DUT=-29627325, Expected=-29627325
+.DUT results: Sample=56, DUT=0, Expected=0
+.DUT results: Sample=57, DUT=31125504, Expected=31125504
+.DUT results: Sample=58, DUT=63758336, Expected=63758336
+.DUT results: Sample=59, DUT=97898496, Expected=97898496
+.DUT results: Sample=60, DUT=133545984, Expected=133545984
+.DUT results: Sample=61, DUT=170733423, Expected=170733423
+.DUT results: Sample=62, DUT=209428150, Expected=209428150
+.DUT results: Sample=63, DUT=249667068, Expected=249667068
+.DUT results: Sample=64, DUT=-291388038, Expected=-291388038
+
+.DUT results: Sample=65, DUT=-260294930, Expected=-260294930
+.DUT results: Sample=66, DUT=-227653536, Expected=-227653536
+.DUT results: Sample=67, DUT=-193517100, Expected=-193517100
+.DUT results: Sample=68, DUT=-157850205, Expected=-157850205
+.DUT results: Sample=69, DUT=-120646053, Expected=-120646053
+.DUT results: Sample=70, DUT=-81934573, Expected=-81934573
+.DUT results: Sample=71, DUT=-41711670, Expected=-41711670
+.DUT results: Sample=72, DUT=0, Expected=0
+.DUT results: Sample=73, DUT=43212800, Expected=43212800
+.DUT results: Sample=74, DUT=87900160, Expected=87900160
+.DUT results: Sample=75, DUT=134049792, Expected=134049792
+.DUT results: Sample=76, DUT=181649408, Expected=181649408
+.DUT results: Sample=77, DUT=230675456, Expected=230675456
+.DUT results: Sample=78, DUT=281113425, Expected=281113425
+.DUT results: Sample=79, DUT=332956323, Expected=332956323
+.DUT results: Sample=80, DUT=-386147310, Expected=-386147310
+.DUT results: Sample=81, DUT=-342749850, Expected=-342749850
+.DUT results: Sample=82, DUT=-297910602, Expected=-297910602
+.DUT results: Sample=83, DUT=-251654142, Expected=-251654142
+.DUT results: Sample=84, DUT=-204017499, Expected=-204017499
+.DUT results: Sample=85, DUT=-155000505, Expected=-155000505
+.DUT results: Sample=86, DUT=-104640025, Expected=-104640025
+.DUT results: Sample=87, DUT=-52956540, Expected=-52956540
+.DUT results: Sample=88, DUT=0, Expected=0
+.DUT results: Sample=89, DUT=54226944, Expected=54226944
+.DUT results: Sample=90, DUT=109682688, Expected=109682688
+.DUT results: Sample=91, DUT=166330368, Expected=166330368
+.DUT results: Sample=92, DUT=224116736, Expected=224116736
+.DUT results: Sample=93, DUT=283019780, Expected=283019780
+.DUT results: Sample=94, DUT=343017850, Expected=343017850
+.DUT results: Sample=95, DUT=404060403, Expected=404060403
+.DUT results: Sample=96, DUT=-466096350, Expected=-466096350
+.DUT results: Sample=97, DUT=-411529180, Expected=-411529180
+.DUT results: Sample=98, DUT=-355806946, Expected=-355806946
+.DUT results: Sample=99, DUT=-298978800, Expected=-298978800
+.DUT results: Sample=100, DUT=-241141377, Expected=-241141377
+.DUT results: Sample=101, DUT=-182253071, Expected=-182253071
+.DUT results: Sample=102, DUT=-122406304, Expected=-122406304
+.DUT results: Sample=103, DUT=-61633845, Expected=-61633845
+.DUT results: Sample=104, DUT=0, Expected=0
+.DUT results: Sample=105, DUT=62484480, Expected=62484480
+.DUT results: Sample=106, DUT=125747200, Expected=125747200
+.DUT results: Sample=107, DUT=189751296, Expected=189751296
+.DUT results: Sample=108, DUT=254443520, Expected=254443520
+.DUT results: Sample=109, DUT=319759106, Expected=319759106
+.DUT results: Sample=110, DUT=385680050, Expected=385680050
+.DUT results: Sample=111, DUT=452112999, Expected=452112999
+.DUT results: Sample=112, DUT=-519013440, Expected=-519013440
+.DUT results: Sample=113, DUT=-456082360, Expected=-456082360
+.DUT results: Sample=114, DUT=-392446780, Expected=-392446780
+.DUT results: Sample=115, DUT=-328241862, Expected=-328241862
+.DUT results: Sample=116, DUT=-263487789, Expected=-263487789
+.DUT results: Sample=117, DUT=-198226171, Expected=-198226171
+.DUT results: Sample=118, DUT=-132513998, Expected=-132513998
+.DUT results: Sample=119, DUT=-66416805, Expected=-66416805
+.DUT results: Sample=120, DUT=0, Expected=0
+.DUT results: Sample=121, DUT=66711552, Expected=66711552
+.DUT results: Sample=122, DUT=133644288, Expected=133644288
+.DUT results: Sample=123, DUT=200749056, Expected=200749056
+.DUT results: Sample=124, DUT=267960320, Expected=267960320
+.DUT results: Sample=125, DUT=335220751, Expected=335220751
+.DUT results: Sample=126, DUT=402489350, Expected=402489350
+.DUT results: Sample=127, DUT=469716993, Expected=469716993
+.DUT results: Sample=128, DUT=-536805378, Expected=-536805378
+
+.DUT results: Sample=129, DUT=-469557260, Expected=-469557260
+.DUT results: Sample=130, DUT=-402251806, Expected=-402251806
+.DUT results: Sample=131, DUT=-334917690, Expected=-334917690
+.DUT results: Sample=132, DUT=-267649071, Expected=-267649071
+.DUT results: Sample=133, DUT=-200450118, Expected=-200450118
+.DUT results: Sample=134, DUT=-133406817, Expected=-133406817
+.DUT results: Sample=135, DUT=-66564225, Expected=-66564225
+.DUT results: Sample=136, DUT=0, Expected=0
+.DUT results: Sample=137, DUT=66265088, Expected=66265088
+.DUT results: Sample=138, DUT=132161536, Expected=132161536
+.DUT results: Sample=139, DUT=197627904, Expected=197627904
+.DUT results: Sample=140, DUT=262619136, Expected=262619136
+.DUT results: Sample=141, DUT=327049630, Expected=327049630
+.DUT results: Sample=142, DUT=390939100, Expected=390939100
+.DUT results: Sample=143, DUT=454148640, Expected=454148640
+.DUT results: Sample=144, DUT=-516687054, Expected=-516687054
+.DUT results: Sample=145, DUT=-449946980, Expected=-449946980
+.DUT results: Sample=146, DUT=-383698436, Expected=-383698436
+.DUT results: Sample=147, DUT=-318023340, Expected=-318023340
+.DUT results: Sample=148, DUT=-252986286, Expected=-252986286
+.DUT results: Sample=149, DUT=-188605450, Expected=-188605450
+.DUT results: Sample=150, DUT=-124953705, Expected=-124953705
+.DUT results: Sample=151, DUT=-62059725, Expected=-62059725
+.DUT results: Sample=152, DUT=0, Expected=0
+.DUT results: Sample=153, DUT=61210624, Expected=61210624
+.DUT results: Sample=154, DUT=121511936, Expected=121511936
+.DUT results: Sample=155, DUT=180867072, Expected=180867072
+.DUT results: Sample=156, DUT=239206400, Expected=239206400
+.DUT results: Sample=157, DUT=296515441, Expected=296515441
+.DUT results: Sample=158, DUT=352749550, Expected=352749550
+.DUT results: Sample=159, DUT=407844975, Expected=407844975
+.DUT results: Sample=160, DUT=-461771238, Expected=-461771238
+.DUT results: Sample=161, DUT=-400175860, Expected=-400175860
+.DUT results: Sample=162, DUT=-339612680, Expected=-339612680
+.DUT results: Sample=163, DUT=-280118562, Expected=-280118562
+.DUT results: Sample=164, DUT=-221760288, Expected=-221760288
+.DUT results: Sample=165, DUT=-164510643, Expected=-164510643
+.DUT results: Sample=166, DUT=-108440649, Expected=-108440649
+.DUT results: Sample=167, DUT=-53591265, Expected=-53591265
+.DUT results: Sample=168, DUT=0, Expected=0
+.DUT results: Sample=169, DUT=52326400, Expected=52326400
+.DUT results: Sample=170, DUT=103342080, Expected=103342080
+.DUT results: Sample=171, DUT=153022464, Expected=153022464
+.DUT results: Sample=172, DUT=201342976, Expected=201342976
+.DUT results: Sample=173, DUT=248266917, Expected=248266917
+.DUT results: Sample=174, DUT=293794125, Expected=293794125
+.DUT results: Sample=175, DUT=337887735, Expected=337887735
+.DUT results: Sample=176, DUT=-380511558, Expected=-380511558
+.DUT results: Sample=177, DUT=-327956130, Expected=-327956130
+.DUT results: Sample=178, DUT=-276801536, Expected=-276801536
+.DUT results: Sample=179, DUT=-227039586, Expected=-227039586
+.DUT results: Sample=180, DUT=-178722147, Expected=-178722147
+.DUT results: Sample=181, DUT=-131839510, Expected=-131839510
+.DUT results: Sample=182, DUT=-86415050, Expected=-86415050
+.DUT results: Sample=183, DUT=-42456960, Expected=-42456960
+.DUT results: Sample=184, DUT=0, Expected=0
+.DUT results: Sample=185, DUT=40972288, Expected=40972288
+.DUT results: Sample=186, DUT=80437248, Expected=80437248
+.DUT results: Sample=187, DUT=118394880, Expected=118394880
+.DUT results: Sample=188, DUT=154828800, Expected=154828800
+.DUT results: Sample=189, DUT=189717456, Expected=189717456
+.DUT results: Sample=190, DUT=223116425, Expected=223116425
+.DUT results: Sample=191, DUT=254971203, Expected=254971203
+.DUT results: Sample=192, DUT=-285326328, Expected=-285326328
+
+.DUT results: Sample=193, DUT=-244325740, Expected=-244325740
+.DUT results: Sample=194, DUT=-204873438, Expected=-204873438
+.DUT results: Sample=195, DUT=-166916178, Expected=-166916178
+.DUT results: Sample=196, DUT=-130523361, Expected=-130523361
+.DUT results: Sample=197, DUT=-95629721, Expected=-95629721
+.DUT results: Sample=198, DUT=-62243409, Expected=-62243409
+.DUT results: Sample=199, DUT=-30368520, Expected=-30368520
+.DUT results: Sample=200, DUT=0, Expected=0
+.DUT results: Sample=201, DUT=28893184, Expected=28893184
+.DUT results: Sample=202, DUT=56311808, Expected=56311808
+.DUT results: Sample=203, DUT=82268160, Expected=82268160
+.DUT results: Sample=204, DUT=106790912, Expected=106790912
+.DUT results: Sample=205, DUT=129877818, Expected=129877818
+.DUT results: Sample=206, DUT=151578600, Expected=151578600
+.DUT results: Sample=207, DUT=171882645, Expected=171882645
+.DUT results: Sample=208, DUT=-190829184, Expected=-190829184
+.DUT results: Sample=209, DUT=-162128850, Expected=-162128850
+.DUT results: Sample=210, DUT=-134837538, Expected=-134837538
+.DUT results: Sample=211, DUT=-108983916, Expected=-108983916
+.DUT results: Sample=212, DUT=-84519897, Expected=-84519897
+.DUT results: Sample=213, DUT=-61410426, Expected=-61410426
+.DUT results: Sample=214, DUT=-39644440, Expected=-39644440
+.DUT results: Sample=215, DUT=-19180980, Expected=-19180980
+.DUT results: Sample=216, DUT=0, Expected=0
+.DUT results: Sample=217, DUT=17936384, Expected=17936384
+.DUT results: Sample=218, DUT=34660352, Expected=34660352
+.DUT results: Sample=219, DUT=50208768, Expected=50208768
+.DUT results: Sample=220, DUT=64602112, Expected=64602112
+.DUT results: Sample=221, DUT=77902116, Expected=77902116
+.DUT results: Sample=222, DUT=90116525, Expected=90116525
+.DUT results: Sample=223, DUT=101323314, Expected=101323314
+.DUT results: Sample=224, DUT=-111535464, Expected=-111535464
+.DUT results: Sample=225, DUT=-93951590, Expected=-93951590
+.DUT results: Sample=226, DUT=-77506396, Expected=-77506396
+.DUT results: Sample=227, DUT=-62130252, Expected=-62130252
+.DUT results: Sample=228, DUT=-47789211, Expected=-47789211
+.DUT results: Sample=229, DUT=-34465035, Expected=-34465035
+.DUT results: Sample=230, DUT=-22074745, Expected=-22074745
+.DUT results: Sample=231, DUT=-10606050, Expected=-10606050
+.DUT results: Sample=232, DUT=0, Expected=0
+.DUT results: Sample=233, DUT=9793536, Expected=9793536
+.DUT results: Sample=234, DUT=18817024, Expected=18817024
+.DUT results: Sample=235, DUT=27119616, Expected=27119616
+.DUT results: Sample=236, DUT=34750464, Expected=34750464
+.DUT results: Sample=237, DUT=41756681, Expected=41756681
+.DUT results: Sample=238, DUT=48216150, Expected=48216150
+.DUT results: Sample=239, DUT=54130848, Expected=54130848
+.DUT results: Sample=240, DUT=-59601354, Expected=-59601354
+.DUT results: Sample=241, DUT=-50287180, Expected=-50287180
+.DUT results: Sample=242, DUT=-41628356, Expected=-41628356
+.DUT results: Sample=243, DUT=-33522486, Expected=-33522486
+.DUT results: Sample=244, DUT=-25967055, Expected=-25967055
+.DUT results: Sample=245, DUT=-18897406, Expected=-18897406
+.DUT results: Sample=246, DUT=-12245545, Expected=-12245545
+.DUT results: Sample=247, DUT=-5962320, Expected=-5962320
+.DUT results: Sample=248, DUT=0, Expected=0
+.DUT results: Sample=249, DUT=5701632, Expected=5701632
+.DUT results: Sample=250, DUT=11198464, Expected=11198464
+.DUT results: Sample=251, DUT=16551936, Expected=16551936
+.DUT results: Sample=252, DUT=21807104, Expected=21807104
+.DUT results: Sample=253, DUT=27011801, Expected=27011801
+.DUT results: Sample=254, DUT=32266975, Expected=32266975
+.DUT results: Sample=255, DUT=37559010, Expected=37559010
+.
+*** Test Passed ***
+@I [SIM-1] CSim done with 0 errors.
+@I [LIC-101] Checked in feature [HLS]
