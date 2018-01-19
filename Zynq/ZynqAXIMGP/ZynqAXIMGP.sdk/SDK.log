@@ -1,0 +1,15 @@
+09:32:28 INFO  : Launching XSDB server: xsdb.bat -s C:/opt/winprog/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+09:32:46 INFO  : XSDB server has started successfully.
+09:32:47 INFO  : Processing command line option -hwspec D:/opt/source/Vivado/Zynq/ZynqAXIMGP/ZynqAXIMGP.sdk/design_1_wrapper.hdf.
+10:23:46 INFO  : Launching XSDB server: xsdb.bat -s C:/opt/winprog/Xilinx/SDK/2015.2/scripts/xsdb/xsdb/xsdb-server.tcl
+10:23:56 INFO  : XSDB server has started successfully.
+10:23:59 INFO  : Processing command line option -hwspec D:/opt/source/Vivado/Zynq/ZynqAXIMGP/ZynqAXIMGP.sdk/design_1_wrapper.hdf.
+10:24:15 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:24:15 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1438914156464,  Project:1438881121776
+10:24:15 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from D:/opt/source/Vivado/Zynq/ZynqAXIMGP/ZynqAXIMGP.sdk/design_1_wrapper.hdf.
+10:24:16 INFO  : Copied contents of D:/opt/source/Vivado/Zynq/ZynqAXIMGP/ZynqAXIMGP.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+10:24:32 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:24:32 INFO  : Clearing existing target manager status.
+10:24:40 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+10:24:40 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+15:04:42 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
